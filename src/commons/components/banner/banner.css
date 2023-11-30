@@ -1,11 +1,27 @@
 .bg-header {
-  width: 100%;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  min-height: 620px;
+  text-align: center;
   height: 100vh;
-  background: rgb(254, 215, 215);
-  /* background: linear-gradient(
-    45deg,
-    rgba(254, 215, 215, 1) 0%,
-    rgba(213, 0, 0, 1) 100%
-  ); */
-  z-index: 1;
+}
+
+h1 {
+  font-size: xx-large;
+  font-weight: 800;
+  color: black;
+}
+
+.bg-content {
+  height: 230px;
+  background-color: rgba(37, 35, 35, 0.25);
+  padding: 30px;
+}
+
+.background_cover {
+  background-image: url(../../../../public/assets/công\ ty.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100vh;
 }
