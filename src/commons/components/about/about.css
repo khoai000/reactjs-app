@@ -1,0 +1,16 @@
+.about-wrap {
+  width: 100%;
+}
+.about {
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+}
+.about-left {
+  flex: 45%; /* Đặt tỉ lệ cho phần trái là 30% */
+  background: whitesmoke;
+}
+.about-right {
+  flex: 55%; /* Đặt tỉ lệ cho phần trái là 30% */
+  background: yellow;
+}

@@ -10,18 +10,30 @@
 h1 {
   font-size: xx-large;
   font-weight: 800;
-  color: black;
+  color: white;
 }
 
 .bg-content {
   height: 230px;
-  background-color: rgba(37, 35, 35, 0.25);
+  background: linear-gradient(
+    to right,
+    rgba(231, 228, 223, 0.4),
+    rgba(206, 38, 8, 0.6)
+  );
   padding: 30px;
 }
 
 .background_cover {
-  background-image: url(../../../../public/assets/công\ ty.jpg);
-  background-size: cover;
-  background-repeat: repeat;
-  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("/public/images/bg-test.jpeg"); /* Đường dẫn đến hình ảnh của bạn */
+  background-size: cover; /* Đảm bảo hình ảnh sẽ che phủ toàn bộ background */
+  background-position: center; /* Chính giữa hình ảnh */
+  background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+  height: 100vh; /* Đặt chiều cao bằng chiều cao của viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff; /* Màu chữ trắng hoặc màu khác tùy chọn */
+  text-align: center;
 }
