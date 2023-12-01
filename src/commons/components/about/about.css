@@ -7,10 +7,9 @@
   margin: 0 auto;
 }
 .about-left {
-  flex: 45%; /* Đặt tỉ lệ cho phần trái là 30% */
-  background: whitesmoke;
+  flex: 40%; /* Đặt tỉ lệ cho phần trái là 30% */
+  background: wheat;
 }
 .about-right {
-  flex: 55%; /* Đặt tỉ lệ cho phần trái là 30% */
-  background: yellow;
+  flex: 60%; /* Đặt tỉ lệ cho phần trái là 30% */
 }
