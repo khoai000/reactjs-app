@@ -1,6 +1,13 @@
+.header-wrap {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  /* background: violet; */
+  border-radius: 12px;
+}
+
 .text {
   margin-right: 18px;
   color: darkred;
   font-weight: 700;
-  position: relative;
 }

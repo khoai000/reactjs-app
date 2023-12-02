@@ -1,5 +1,5 @@
 .order-wrap {
-  height: 100vh;
+  height: max-content;
   width: 90%;
   /* background: violet; */
   margin: 0 auto;
@@ -28,7 +28,8 @@
   -webkit-text-fill-color: transparent;
   animation: textclip 3s linear infinite;
   display: inline-block;
-  font-size: 32px;
+  font-size: 36px;
+  margin-bottom: 32px;
 }
 
 @keyframes textclip {

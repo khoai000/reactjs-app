@@ -4,9 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Tooltip } from "antd";
-import leverUP from "../../../assets/level-up.png";
-import service from "../../../assets/customer-service.png";
-import location from "../../../assets/location.png";
+import leverUP from "../../assets/level-up.png";
+import service from "../../assets/customer-service.png";
+import location from "../../assets/location.png";
 
 const settings = {
   dots: true,
