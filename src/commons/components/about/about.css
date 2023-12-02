@@ -24,11 +24,20 @@
   color: #ffffff; /* Màu chữ trắng */ /* Đặt tỉ lệ cho phần trái là 30% */
 }
 
-.about-right__link {
+.about-right__link p {
+  color: #000;
+  cursor: pointer;
+  margin: auto;
+  font-size: 1.2em;
+  font-weight: 300;
+  transition: font-weight 250ms ease-in-out;
   font-style: italic;
-  color: black;
+  margin-bottom: 6px;
 }
 
+.about-right__link p:hover {
+  font-weight: 800;
+}
 .about-right__title {
   text-transform: uppercase;
   background-image: linear-gradient(
@@ -50,6 +59,16 @@
   font-size: 32px;
 }
 
+/* @keyframes rise {
+  to {
+    text-shadow: 0em 0.01em #ff5, 0em 0.02em #ff5, 0em 0.02em 0.03em #ff5,
+      -0.01em 0.01em #333, -0.02em 0.02em #333, -0.03em 0.03em #333,
+      -0.04em 0.04em #333, -0.01em -0.01em 0.03em #000,
+      -0.02em -0.02em 0.03em #000, -0.03em -0.03em 0.03em #000;
+    transform: translateY(-0.025em) translateX(0.04em);
+  }
+} */
+
 @keyframes textclip {
   to {
     background-position: 200% center;
@@ -59,7 +78,7 @@
 .about-right__content {
   font-size: 16px;
   color: black;
-  margin-top: 6px;
+  margin-top: 8px;
   /* text-shadow: 3px 3px 5px rgba(185, 75, 75, 0.5); */
   font-weight: 500;
   transform: scale(1.02);
@@ -68,14 +87,49 @@
 }
 
 .about-right__content img {
-  margin-right: 24px;
-  margin-top: 8px;
-  margin-left: 24px;
+  margin-right: 10px;
+  margin-top: 12px;
+  margin-left: 12px;
   color: #fff;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
     0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  width: 36px;
 }
 
+.about-right__content p {
+  font-size: 1em;
+  line-height: 150%;
+  /* text-align: center; */
+  letter-spacing: 0.5px;
+}
 .about-right__content p:first-of-type {
-  text-indent: 24px; /* Điều chỉnh giá trị thụt lề theo ý muốn của bạn */
+  text-indent: 18px; /* Điều chỉnh giá trị thụt lề theo ý muốn của bạn */
+}
+
+.comic-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff5252;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+}
+
+.comic-button:hover {
+  background-color: #fff;
+  color: #ff5252;
+  border: 2px solid #ff5252;
+  box-shadow: 5px 5px 0px #ff5252;
+}
+
+.comic-button:active {
+  background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
 }
