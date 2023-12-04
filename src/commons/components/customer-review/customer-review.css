@@ -1,17 +1,16 @@
-.order-wrap {
-  height: max-content;
+.review-wrap {
+  /* height: 100vh; */
   width: 90%;
-  /* background: violet; */
   margin: 0 auto;
+  /* background: wheat; */
   display: flex;
-  align-content: center;
-  justify-content: center;
+  align-items: center;
+  /* justify-content: center; */
   flex-direction: column;
-  text-align: center;
 }
 
-.order-wrap h1 {
-  ext-transform: uppercase;
+.text-comp {
+  text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
     #231557 0%,
@@ -29,7 +28,7 @@
   animation: textclip 3s linear infinite;
   display: inline-block;
   font-size: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 12px;
 }
 
 @keyframes textclip {

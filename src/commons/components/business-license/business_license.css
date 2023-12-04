@@ -1,6 +1,69 @@
 .license-wrap {
-  height: 100vh;
+  /* height: 100vh; */
   width: 90%;
   margin: 0 auto;
-  background: wheat;
+  /* background: wheat; */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+.license-wrap div h1 {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.license-content {
+  width: 100%;
+  --b: 0.5em; /* border width */
+  --c: 3em; /* corner size */
+  --r: 2em; /* corner rounding */
+  position: relative;
+  border: solid var(--b) transparent;
+  padding: 12px 8px;
+}
+
+.license-content::before {
+  position: absolute;
+  z-index: -1;
+  inset: calc(-1 * var(--b));
+  border: inherit;
+  border-radius: var(--r);
+  background: linear-gradient(orange, deeppink, purple) border-box;
+  --corner: conic-gradient(from -90deg at var(--c) var(--c), red 25%, #0000 0) 0
+    0 / calc(100% - var(--c)) calc(100% - var(--c)) border-box;
+  --inner: conic-gradient(red 0 0) padding-box;
+  -webkit-mask: var(--corner), var(--inner);
+  -webkit-mask-composite: source-out;
+  mask: var(--corner) subtract, var(--inner);
+  content: "";
+}
+
+.license-content img {
+  width: 580px;
+  height: 780px;
 }

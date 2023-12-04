@@ -7,6 +7,7 @@ import { Tooltip } from "antd";
 import leverUP from "../../assets/level-up.png";
 import service from "../../assets/customer-service.png";
 import location from "../../assets/location.png";
+import university from "../../images/công ty.jpg";
 
 const settings = {
   dots: true,
@@ -24,7 +25,7 @@ const About = () => {
     <div className="about-wrap flex flex-row">
       <div className="about-left">
         <div className="flex justify-center items-center p-6 h-full">
-          <Slider {...settings} className="about-left__slider w-[24rem] cover">
+          {/* <Slider {...settings} className="about-left__slider w-[24rem] cover">
             <img
               src="https://i.ibb.co/2y0s2qj/bg-image2.jpg"
               alt="bg-image2"
@@ -35,17 +36,8 @@ const About = () => {
               alt="bg-image2"
               className="rounded-3xl"
             />
-            {/* <img
-                src="https://i.ibb.co/2y0s2qj/bg-image2.jpg"
-                alt="bg-image2"
-                className="rounded-2xl"
-              />
-                <img
-                  src="https://i.ibb.co/2y0s2qj/bg-image2.jpg"
-                  alt="bg-image2"
-                  className="rounded-2lg"
-                /> */}
-          </Slider>
+          </Slider> */}
+          <img src={university} alt="" width={500} />
         </div>
       </div>
       <div className="about-right flex justify-center items-center">
