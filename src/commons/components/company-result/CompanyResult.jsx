@@ -54,7 +54,7 @@ const CompanyResult = () => {
         <h1 className="">MỘT SỐ HÌNH ẢNH</h1>
       </div>
 
-      <div class="timeline !-mt-4 !mb-96">
+      <div class="timeline !-mt-4">
         <div
           class="timeline__event  animated fadeInUp delay-3s timeline__event--type1"
           id="slide1"

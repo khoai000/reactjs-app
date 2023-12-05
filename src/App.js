@@ -7,17 +7,19 @@ import BusinessLicense from "./commons/components/business-license/BusinessLicen
 import CompanyInfo from "./commons/components/company-info/CompanyInfo";
 import CompanyResult from "./commons/components/company-result/CompanyResult";
 import CustomerReview from "./commons/components/customer-review/CustomerReview";
+import Footer from "./commons/components/footer/Footer";
 
 function App() {
   return (
     <div className="scroll-smooth">
-      {/* <Banner /> */}
-      {/* <About /> */}
-      {/* <Order /> */}
-      {/* <BusinessLicense /> */}
-      {/* <CompanyInfo /> */}
-      {/* <CompanyResult /> */}
+      <Banner />
+      <About />
+      <Order />
+      <BusinessLicense />
+      <CompanyInfo />
+      <CompanyResult />
       <CustomerReview />
+      <Footer />
     </div>
   );
 }

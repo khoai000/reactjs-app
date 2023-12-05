@@ -5,7 +5,7 @@ import Header from "../header/Header";
 const Banner = () => {
   return (
     <div className="bg-header flex items-center justify-center background_cover">
-      <div className="container flex items-center justify-center -mt-5 z-10">
+      <div className="container flex items-center justify-center z-10 -mt-[400px] -ml-[500px]">
         <div class="bg-content rounded-3xl transform -rotate-45 py-10">
           <div class="col-lg-6 col-12 mx-auto transform rotate-45">
             <p class="text-xl mb-4 italic">Welcome to bcnhr.com.vn</p>
