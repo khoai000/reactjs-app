@@ -47,7 +47,9 @@ const About = () => {
           </div>
           <div className="mb-6 ">
             <div>
-              <h1 className="about-right__title">CTCP CUNG ỨNG NHÂN LỰC</h1>
+              <h1 className="about-right__title">
+                CÔNG TY CỔ PHẦN CUNG ỨNG NHÂN LỰC
+              </h1>
             </div>
             <div>
               <h1 className="about-right__title text-3xl  ">BCN QUỐC TẾ</h1>

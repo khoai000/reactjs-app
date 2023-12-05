@@ -10,7 +10,7 @@ const Banner = () => {
           <div class="col-lg-6 col-12 mx-auto transform rotate-45">
             <p class="text-xl mb-4 italic">Welcome to bcnhr.com.vn</p>
 
-            <h1>CTCP CUNG ỨNG NHÂN LỰC</h1>
+            <h1>CÔNG TY CỔ PHẦN CUNG ỨNG NHÂN LỰC</h1>
             <h1 className="text-5xl">BCN QUỐC TẾ</h1>
 
             <div class="text-white mt-4 ">

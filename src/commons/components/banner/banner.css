@@ -26,7 +26,7 @@ h1 {
 .background_cover {
   margin: 0;
   padding: 0;
-  background-image: url("/src/commons//images/image1.jpg"); /* Đường dẫn đến hình ảnh của bạn */
+  /* background-image: url("/src/commons//images/cty.jpg"); Đường dẫn đến hình ảnh của bạn */
   background-size: cover; /* Đảm bảo hình ảnh sẽ che phủ toàn bộ background */
   background-position: center; /* Chính giữa hình ảnh */
   background-repeat: no-repeat; /* Không lặp lại hình ảnh */
