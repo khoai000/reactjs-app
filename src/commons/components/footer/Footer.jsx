@@ -11,20 +11,39 @@ const Footer = () => {
               <div class="sm:col-span-2">
                 <a href="#" class="inline-flex items-center">
                   <img src={logo} alt="logo" class="h-20 w-20" />
-                  <span class="ml-2 text-xl font-bold tracking-wide text-gray-800">
-                    Company Name
+                  <span class="ml-2 text-2xl font-bold tracking-wide text-gray-800 text-center">
+                    CÔNG TY CỔ PHẦN CUNG ỨNG NHÂN LỰC <br /> BCN QUỐC TẾ
                   </span>
                 </a>
                 <div class="mt-6 lg:max-w-xl">
-                  <p class="text-sm text-gray-800">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Morbi felis mi, faucibus dignissim lorem id, imperdiet
-                    interdum mauris. Vestibulum ultrices sed libero non porta.
-                    Vivamus malesuada urna eu nibh malesuada, non finibus massa
-                    laoreet. Nunc nisi velit, feugiat a semper quis, pulvinar id
-                    libero. Vivamus mi diam, consectetur non orci ut, tincidunt
-                    pretium justo. In vehicula porta molestie. Suspendisse
-                    potenti.
+                  <p class="text-lg text-gray-800">
+                    Trụ sở chính:{" "}
+                    <strong>
+                      BT9 - Lô NO12, Khu Đô Thị Mới Dịch Vọng - Phường Dịch Vọng
+                      - Quận Cầu Giấy - Hà Nội.
+                    </strong>
+                  </p>
+                </div>
+                <div class="mt-1 lg:max-w-xl">
+                  <p class="text-lg text-gray-800">
+                    Văn phòng tại Hà Nội:{" "}
+                    <strong>
+                      Tòa nhà A2 - D6 - Ngõ 5 - Phố Thọ Tháp - Phường Dịch Vọng
+                      - Quận Cầu Giấy - Hà Nội
+                    </strong>
+                  </p>
+                </div>
+                <div class="mt-1 lg:max-w-xl">
+                  <p class="text-lg text-gray-800">
+                    Văn phòng tại HCM:{" "}
+                    <strong>
+                      Số 1/12, Đường 21, Phường 8, Quận Gò Vấp, Tp. HCM
+                    </strong>
+                  </p>
+                </div>
+                <div class="mt-1 lg:max-w-xl">
+                  <p class="text-lg text-gray-800">
+                    Hotline: <strong>024 3791 8534 - 097 626 5599</strong>
                   </p>
                 </div>
               </div>

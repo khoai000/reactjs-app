@@ -40,13 +40,7 @@
 * {
   /* background-color: var(--white-color); */
   font-family: var(--body-font-family);
-  /* background: linear-gradient(
-    to right,
-    #ff0000,
-    #ff0000 50%,
-    #ffffff 50%,
-    #ffffff
-  ); */
+  /* color: var(--white-color) !important; */
   margin: 0;
   padding: 0;
   border: 0;
@@ -55,4 +49,13 @@
   &:after {
     box-sizing: border-box;
   }
+}
+
+body {
+  background-image: url("/src/commons/images/BNCHR/background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100vh;
+  background-position: center center;
+  background-attachment: fixed;
 }

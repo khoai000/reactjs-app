@@ -14,19 +14,19 @@ h1 {
 }
 
 .bg-content {
-  height: 230px;
+  height: max-content;
   background: linear-gradient(
     to right,
     rgba(231, 228, 223, 0.4),
     rgba(206, 38, 8, 0.6)
   );
-  padding: 30px;
+  padding: 24px;
 }
 
 .background_cover {
   margin: 0;
   padding: 0;
-  /* background-image: url("/src/commons//images/cty.jpg"); Đường dẫn đến hình ảnh của bạn */
+  background-image: url("/src/commons/images/cty.jpg");
   background-size: cover; /* Đảm bảo hình ảnh sẽ che phủ toàn bộ background */
   background-position: center; /* Chính giữa hình ảnh */
   background-repeat: no-repeat; /* Không lặp lại hình ảnh */
