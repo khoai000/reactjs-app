@@ -52,10 +52,11 @@
 }
 
 body {
-  background-image: url("/src/commons/images/BNCHR/background1.jpg");
+  background-image: url("/src/commons/images/BNCHR/bg5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-width: 100vh;
   background-position: center center;
   background-attachment: fixed;
+  /* background-color: rgba(255, 255, 255, 0.3); */
 }

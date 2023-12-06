@@ -3,9 +3,11 @@
   box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
   padding: 10px;
   background-color: #fff;
-  color: #697e91;
-  max-width: 300px;
-  margin-bottom: 32px;
+  color: hsl(208, 16%, 49%);
+  /* max-width: 600px;
+  width: 420px;
+  height: 400px; */
+  margin: 0 32px 60px;
 }
 
 .plan strong {
@@ -17,9 +19,13 @@
   align-items: center;
   padding: 20px;
   padding-top: 40px;
-  background: linear-gradient(#dbf2ff, #ffffff);
+  background: linear-gradient(#bafae2, #eac6ff);
   border-radius: 12px;
-  position: relative;
+  /* position: relative; */
+}
+
+.plan .inner img {
+  width: 32px;
 }
 
 .plan .pricing {
@@ -33,7 +39,7 @@
   padding: 0.625em 0.75em;
   font-size: 1rem;
   font-weight: 600;
-  color: #425475;
+  color: #000000;
 }
 
 .plan .pricing img {
@@ -43,9 +49,9 @@
 }
 
 .plan .title {
-  font-weight: 600;
-  font-size: 1.35rem;
-  color: #34507a;
+  font-weight: 700;
+  font-size: 24px;
+  color: #184385;
 }
 
 .plan .title + * {
@@ -53,7 +59,11 @@
 }
 
 .plan .info + * {
-  margin-top: 1rem;
+  margin-top: 12px;
+  height: max-content;
+  word-wrap: break-word;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .plan .features {
@@ -68,7 +78,7 @@
 }
 
 .plan .features li + * {
-  margin-top: 0.75rem;
+  margin-top: -12px !important;
 }
 
 .plan .features .icon {
@@ -89,14 +99,17 @@
 
 .plan .features span {
   font-size: 14px;
+  color: #000000;
 }
 
 .plan .features strong {
-  font-size: 16px;
+  font-size: 18px;
+  color: #184385;
+  font-weight: 800;
 }
 
 .plan .features + * {
-  margin-top: 1.25rem;
+  margin-top: 12px;
 }
 
 .plan .action {
@@ -107,7 +120,7 @@
 }
 
 .plan .button {
-  background-color: #6558d3;
+  background-color: #272424;
   border-radius: 6px;
   color: #fff;
   font-weight: 500;
@@ -115,8 +128,9 @@
   text-align: center;
   border: 0;
   outline: 0;
-  width: 100%;
-  padding: 0.625em 0.75em;
+  width: 80%;
+  padding: 6px 10px;
+  margin: 0 auto;
   text-decoration: none;
 }
 

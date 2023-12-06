@@ -17,16 +17,18 @@ const OderCard = ({ props }) => {
   return (
     <div class="plan">
       <div class="inner">
-        <span class="pricing">
+        <div class="pricing flex bg-slate-700">
           <img
             src={props.country ? TypeMapCountry[props.country] : japan}
             alt="flag"
           />
-        </span>
-        <p class="title">Đơn hàng {props.title || ""}</p>
-        <p class="info text-base text-red-900 font-medium">
-          {props.info || "Tuyển lao động làm việc nước ngoài."}
+        </div>
+        <p class="title font-extrabold text-3xl">
+          Đơn hàng {props.title || ""}
         </p>
+        <div class="info text-xl text-red-900 font-bold h-9 !mb-6">
+          {props.info || "Tuyển lao động làm việc nước ngoài."}
+        </div>
         <ul class="features">
           <li>
             <span class="icon">
@@ -106,7 +108,7 @@ const OderCard = ({ props }) => {
             </span>
           </li>
         </ul>
-        <div class="action">
+        <div class="action !mt-6">
           <div class="button" href="#">
             Xem chi tiết
           </div>

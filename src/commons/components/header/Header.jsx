@@ -5,152 +5,47 @@ import logo from "../../assets/Logo_BCN.png";
 const Header = () => {
   return (
     <div className="header-wrap">
-      {/* <div className=" h-[70px] my-8 rounded-lg flex flex-row items-center justify-between ">
-        <div className="h-full flex items-center basis-1/5">
-          <img
-            src={logo}
-            alt="logo"
-            border="0"
-            className="object-fill w-24 ml-6 -mt-4"
-          />
-        </div>
-        <ul className="flex flex-row text-lg mr-9 font-semibold">
-          <li className="text">
-            <a href="/">Trang chủ</a>
-          </li>
-          <li className="text">
-            <a href="/">Giới thiệu</a>
-          </li>
-          <li className="text">
-            <a href="/">Đơn hàng</a>
-          </li>
-          <li className="text">
-            <a href="/">Đánh giá</a>
-          </li>
-          <li className="text">
-            <a href="/">Liên hệ</a>
-          </li>
-        </ul>
-      </div> */}
-      <nav>
-        <div class="wrapper">
-          <div class="logo">
-            <a href="#">Logo</a>
-          </div>
-          <input type="radio" name="slider" id="menu-btn" />
-          <input type="radio" name="slider" id="close-btn" />
-          <ul class="nav-links">
-            <label for="close-btn" class="btn close-btn">
-              <i class="fas fa-times"></i>
-            </label>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#" class="desktop-item">
-                Dropdown Menu
-              </a>
-              <input type="checkbox" id="showDrop" />
-              <label for="showDrop" class="mobile-item">
-                Dropdown Menu
-              </label>
-              <ul class="drop-menu">
-                <li>
-                  <a href="#">Drop menu 1</a>
-                </li>
-                <li>
-                  <a href="#">Drop menu 2</a>
-                </li>
-                <li>
-                  <a href="#">Drop menu 3</a>
-                </li>
-                <li>
-                  <a href="#">Drop menu 4</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#" class="desktop-item">
-                Mega Menu
-              </a>
-              <input type="checkbox" id="showMega" />
-              <label for="showMega" class="mobile-item">
-                Mega Menu
-              </label>
-              <div class="mega-box">
-                <div class="content">
-                  <div class="row">
-                    <img
-                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="row">
-                    <header>Design Services</header>
-                    <ul class="mega-links">
-                      <li>
-                        <a href="#">Graphics</a>
-                      </li>
-                      <li>
-                        <a href="#">Vectors</a>
-                      </li>
-                      <li>
-                        <a href="#">Business cards</a>
-                      </li>
-                      <li>
-                        <a href="#">Custom logo</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="row">
-                    <header>Email Services</header>
-                    <ul class="mega-links">
-                      <li>
-                        <a href="#">Personal Email</a>
-                      </li>
-                      <li>
-                        <a href="#">Business Email</a>
-                      </li>
-                      <li>
-                        <a href="#">Mobile Email</a>
-                      </li>
-                      <li>
-                        <a href="#">Web Marketing</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="row">
-                    <header>Security services</header>
-                    <ul class="mega-links">
-                      <li>
-                        <a href="#">Site Seal</a>
-                      </li>
-                      <li>
-                        <a href="#">VPS Hosting</a>
-                      </li>
-                      <li>
-                        <a href="#">Privacy Seal</a>
-                      </li>
-                      <li>
-                        <a href="#">Website design</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+      <header class="w-full text-gray-700 rounded-lg border-t-2 border-gray-950 shadow-sm body-font ">
+        <div class="container flex flex-col flex-wrap items-center px-4 py-3 mx-auto md:flex-row">
+          <nav class="flex flex-wrap items-center text-base lg:w-2/5 md:ml-auto">
+            <a
+              href="#_"
+              class="mr-5 font-semibold hover:text-gray-900 glow-on-hover"
+            >
+              Giới thiệu
+            </a>
+            <a
+              href="#_"
+              class="mr-5 font-semibold hover:text-gray-900 glow-on-hover"
+            >
+              About
+            </a>
+            <a
+              href="#_"
+              class="font-semibold hover:text-gray-900 glow-on-hover"
+            >
+              Contact
+            </a>
+          </nav>
+          <a class="logo flex items-center order-first mb-4 font-medium text-gray-900 lg:order-none lg:w-1/5 title-font lg:items-center lg:justify-center md:mb-0">
+            <img src={logo} alt="logo" className="h-14 w-14" />
+          </a>
+          <div class="inline-flex items-center h-full ml-5 lg:w-2/5 lg:justify-end lg:ml-0">
+            {/* <a href="#_" class="mr-5 font-medium hover:text-gray-900">
+              Login
+            </a> */}
+            <button class="Btn">
+              <div class="sign">
+                <svg viewBox="0 0 512 512">
+                  <path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path>
+                </svg>
               </div>
-            </li>
-            <li>
-              <a href="#">Feedback</a>
-            </li>
-          </ul>
-          <label for="menu-btn" class="btn menu-btn">
-            <i class="fas fa-bars"></i>
-          </label>
+
+              <div class="text">Admin</div>
+            </button>
+          </div>
         </div>
-      </nav>
+      </header>
     </div>
   );
 };

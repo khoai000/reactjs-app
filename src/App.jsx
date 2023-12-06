@@ -12,15 +12,17 @@ import Footer from "./commons/components/footer/Footer";
 function App() {
   return (
     <div className="scroll-smooth">
-      <Header />
-      {/* <Banner />
-      <About />
+      <div className="fixed w-full top-0 left-0">
+        <Header />
+      </div>
+      {/* <Banner /> */}
+      {/* <About /> */}
       <Order />
-      <BusinessLicense />
-      <CompanyInfo />
-      <CompanyResult />
-      <CustomerReview />
-      <Footer /> */}
+      {/* <BusinessLicense /> */}
+      {/* <CompanyInfo /> */}
+      {/* <CompanyResult /> */}
+      {/* <CustomerReview /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -2,6 +2,9 @@ import React from "react";
 import "./order.css";
 import OderCard from "../oder-card/OderCard";
 import { COUNTRY_TYPE } from "../../constants";
+import Slider from "react-slick";
+import prevArrow from "../../assets/left-arrow.png";
+import nextArrow from "../../assets/right-arrow.png";
 
 const orders = [
   {
@@ -70,17 +73,69 @@ const orders = [
   },
 ];
 
+const SampleNextArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    // <div
+    //   className={className}
+    //   style={{ ...style, display: "block", background: "red" }}
+    //   onClick={onClick}
+    // />
+    <img
+      src={nextArrow}
+      alt="prev"
+      className={className}
+      style={{ ...style, display: "block", background: "red" }}
+      onClick={onClick}
+    />
+  );
+};
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <img
+      src={prevArrow}
+      alt="prev"
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background: "red",
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+var settings = {
+  dots: true,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 2000,
+  autoplaySpeed: 800,
+  initialSlide: 0,
+  centerMode: true,
+  centerPadding: "80px",
+  className: "center",
+  pauseOnHover: true,
+  nextArrow: <SampleNextArrow />,
+  prevArrow: <SamplePrevArrow />,
+};
+
 const Order = () => {
   return (
     <div className="order-wrap">
-      <div className="-mb-4 mt-4">
+      <div className="!mt-10">
         <h1 className="">DANH SÁCH ĐƠN HÀNG</h1>
       </div>
-      <div className="flex flex-row justify-around items-center flex-wrap">
+      <Slider {...settings}>
         {orders.map((item, index) => {
           return <OderCard props={{ ...item, title: index + 1 }} />;
         })}
-      </div>
+      </Slider>
     </div>
   );
 };
