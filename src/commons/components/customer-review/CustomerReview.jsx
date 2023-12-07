@@ -1,15 +1,21 @@
 import React from "react";
 import "./customer-review.css";
+import wm1 from "../../assets/wm1.jpg";
+import wm2 from "../../assets/wm2.jpg";
+import wm3 from "../../assets/wm3.jpg";
+import wm4 from "../../assets/wm4.jpg";
+import m1 from "../../assets/m1.jpg";
+import m2 from "../../assets/m2.jpg";
 
 const CustomerReview = () => {
   return (
     <div classNameName="review-wrap">
-      <div className="min-w-screen min-h-screen  flex items-center justify-center py-5">
-        <div className="w-full bg-white border-t border-b border-gray-200 px-5 py-16 md:py-24 text-gray-800">
+      <div className="flex items-center justify-center py-5">
+        <div className="w-full border-t border-b border-gray-200 px-5 text-gray-800">
           <div className="w-full max-w-6xl mx-auto">
             <div className="text-center w-full mx-auto">
-              <h1 className="text-comp">KHÁCH HÀNG NÓI GÌ VỀ CHÚNG TÔI</h1>
-              <h3 className="text-base mb-5 font-light">
+              <h1 className="text-comp text-3xl">KHÁCH HÀNG NÓI GÌ VỀ</h1>
+              <h3 className="text-4xl mb-5 font-light">
                 CÔNG TY CỔ PHẦN CUNG ỨNG NHÂN LỰC BCN QUỐC TẾ
               </h3>
               <div className="text-center mb-10">
@@ -25,7 +31,7 @@ const CustomerReview = () => {
                 <div className="w-full mx-auto rounded-lg bg-slate-200 border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-slate-50 border border-gray-200">
-                      <img src="https://i.pravatar.cc/100?img=1" alt="" />
+                      <img src={wm1} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm uppercase text-gray-600">
@@ -51,7 +57,7 @@ const CustomerReview = () => {
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img src="https://i.pravatar.cc/100?img=2" alt="" />
+                      <img src={wm2} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm uppercase text-gray-600">
@@ -79,7 +85,7 @@ const CustomerReview = () => {
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img src="https://i.pravatar.cc/100?img=3" alt="" />
+                      <img src={m1} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm uppercase text-gray-600">
@@ -106,7 +112,7 @@ const CustomerReview = () => {
                 <div className="w-full mx-auto rounded-lg bg-slate-200 border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img src="https://i.pravatar.cc/100?img=4" alt="" />
+                      <img src={m2} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm uppercase text-gray-600">
@@ -134,7 +140,7 @@ const CustomerReview = () => {
                 <div className="w-full mx-auto rounded-lg bg-slate-200 border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img src="https://i.pravatar.cc/100?img=5" alt="" />
+                      <img src={wm3} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm uppercase text-gray-600">
@@ -160,7 +166,7 @@ const CustomerReview = () => {
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img src="https://i.pravatar.cc/100?img=6" alt="" />
+                      <img src={wm4} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm uppercase text-gray-600">

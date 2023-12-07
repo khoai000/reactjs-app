@@ -12,16 +12,16 @@ import Footer from "./commons/components/footer/Footer";
 function App() {
   return (
     <div className="scroll-smooth">
-      <div className="fixed w-full top-0 left-0">
+      <div className="fixed w-full top-0 left-0 z-[9999]">
         <Header />
       </div>
       <Banner />
       <About />
       <Order />
-      {/* <BusinessLicense /> */}
-      {/* <CompanyInfo /> */}
-      {/* <CompanyResult /> */}
-      {/* <CustomerReview /> */}
+      <BusinessLicense />
+      <CompanyInfo />
+      <CompanyResult />
+      <CustomerReview />
       {/* <Footer /> */}
     </div>
   );

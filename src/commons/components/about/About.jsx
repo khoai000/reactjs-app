@@ -1,32 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./about.css";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Tooltip } from "antd";
 import leverUP from "../../assets/level-up.png";
 import service from "../../assets/customer-service.png";
 import location from "../../assets/location.png";
-import university from "../../images/công ty.jpg";
-
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  autoplay: true,
-  autoplaySpeed: 3000,
-};
+import university from "../../images/cty2.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
     <div className="about-wrap flex flex-row">
-      <div className="about-left">
+      <div className="about-left" data-aos="slide-up" data-aos-offset="200">
         <img src={university} alt="" width={400} className="rounded-2xl" />
       </div>
-      <div className="about-right flex justify-center items-center">
+      <div
+        className="about-right flex justify-center items-center"
+        data-aos="fade-left"
+        data-aos-offset="500"
+      >
         <div className="pr-24">
           <div className="mb-3 text-4xl">
             <h1 className="about-right__title text-3xl !text-slate-800">

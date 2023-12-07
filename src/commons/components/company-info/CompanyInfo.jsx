@@ -1,12 +1,15 @@
 import React from "react";
 import "./company_info.css";
+import CT from "../../images/IMG_6744.JPG";
+import info from "../../images/info2.jpg";
 
 const CompanyInfo = () => {
   return (
     <div className="info-wrap">
-      <div className="mt-4">
+      <div className="mt-4 !text-slate-800 flex flex-col items-center">
         <h1 className="">VỀ CHÚNG TÔI</h1>
-        <ul>
+        <img src={CT} alt="CT" />
+        <ul className="mt-6">
           <li>
             <div class="date color-title1">TẦM NHÌN</div>
             {/* <div class="title">Title 1</div> */}
@@ -17,26 +20,26 @@ const CompanyInfo = () => {
             </div>
           </li>
           <li>
-            <div class="date color-title2">SỨ MỆNH</div>
-            {/* <div class="title">Title 2</div> */}
-            <div class="descr">
+            <div className="date color-title2">SỨ MỆNH</div>
+            {/* <div className="title">Title 2</div> */}
+            <div className="descr">
               Cung cấp cho khách hàng các sản phẩm, dịch vụ có chất lượng phù
               hợp, giá cả cạnh tranh. Hài hòa lợi ích doanh nghiệp với lợi ích
               xã hội, đóng góp tích cực vào các hoạt động hướng tới cộng đồng.
             </div>
           </li>
           <li>
-            <div class="date color-title3">PHƯƠNG CHÂM</div>
-            {/* <div class="title">Title 3</div> */}
-            <div class="descr">
+            <div className="date color-title3">PHƯƠNG CHÂM</div>
+            {/* <div className="title">Title 3</div> */}
+            <div className="descr">
               Thẳng thắn – Trung thực – Tận tâm phục vụ khách hàng – Lấy uy tín
               làm kim chỉ nam hành động.
             </div>
           </li>
           <li>
-            <div class="date color-title4">THẾ MẠNH</div>
-            {/* <div class="title">Title 3</div> */}
-            <div class="descr">
+            <div className="date color-title4">THẾ MẠNH</div>
+            {/* <div className="title">Title 3</div> */}
+            <div className="descr">
               BCN HR có Ban lãnh đạo và đội ngũ nhân viên kinh nghiệm, am hiểu
               thị trường nước ngoài. Là một trong những doanh nghiệp luôn đi đầu
               trong việc chú trọng xây dựng cơ sở vật chất khang trang, hiện đại
@@ -46,9 +49,9 @@ const CompanyInfo = () => {
             </div>
           </li>
           <li>
-            <div class="date color-title5">CƠ HÔI ĐẦU TƯ </div>
-            {/* <div class="title">Title 3</div> */}
-            <div class="descr">
+            <div className="date color-title5">CƠ HỘI ĐẦU TƯ </div>
+            {/* <div className="title">Title 3</div> */}
+            <div className="descr">
               BCN HR luôn liên tục tuyển chọn nguồn lao động mới, đào tạo ngoại
               ngữ, tay nghề và chuyên môn cũng như các kiến thức văn hoá cần
               thiết để phù hợp với yêu cầu của các nhà tuyển dụng. Bên cạnh đó,
@@ -59,6 +62,7 @@ const CompanyInfo = () => {
             </div>
           </li>
         </ul>
+        <img src={info} alt="info" className="mt-24" />
       </div>
     </div>
   );

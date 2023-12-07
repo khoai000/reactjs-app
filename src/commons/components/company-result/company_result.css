@@ -2,7 +2,7 @@
   height: max-content;
   width: 90%;
   /* background: violet; */
-  margin: 0 auto;
+  margin: 180px auto 120px !important;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -10,27 +10,29 @@
   text-align: center;
   --color: rgba(30, 30, 30);
   --bgColor: rgba(245, 245, 245);
+  background: rgba(231, 228, 223, 0.5);
+  border-radius: 12px;
 }
 
 .activity-wrap h1 {
   text-transform: uppercase;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     -225deg,
     #231557 0%,
     #44107a 29%,
     #ff1361 67%,
     #fff800 100%
-  );
+  ); */
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
+  /* color: #fff;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 3s linear infinite;
-  display: inline-block;
-  font-size: 32px;
+  display: inline-block; */
+  font-size: 36px;
   margin-bottom: 32px;
 }
 
@@ -42,10 +44,10 @@
 
 .activity-achievements {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 60px;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #f0f0f0;
 }
 
 .achievement {
@@ -55,20 +57,27 @@
   min-width: 270px;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 12px;
   margin: 10px;
-  padding: 16px;
+  padding: 8px 18px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100;
 }
 
 .icon img {
   width: 72px;
   margin-right: 24px;
-  margin-top: -12px;
+  margin-top: 16px;
 }
 
 .info {
-  flex-grow: 0.3;
+  flex-grow: 0;
 }
 
 h3 {
@@ -218,8 +227,8 @@ h3 {
 .timeline__event__description div {
   background-repeat: no-repeat;
   background-size: cover;
-  width: 600px;
-  height: 400px;
+  width: 760px;
+  height: 600px;
 }
 
 /* image slide 1 */
@@ -232,6 +241,27 @@ h3 {
 }
 .timeline__event--type1 .timeline__event__description .slide1_img3 {
   background-image: url(/src/commons/images/họp\ 1.jpg);
+}
+.timeline__event--type1 .timeline__event__description .slide1_img4 {
+  background-image: url(/src/commons/images/japanUniversity/2707.jpg);
+}
+.timeline__event--type1 .timeline__event__description .slide1_img5 {
+  background-image: url(/src/commons/images/NGOẠI\ KHÓA\ JTRAIN\ 2.jpg);
+}
+.timeline__event--type1 .timeline__event__description .slide1_img6 {
+  background-image: url(/src/commons/images/japanUniversity/2807.jpg);
+}
+.timeline__event--type1 .timeline__event__description .slide1_img7 {
+  background-image: url(/src/commons/images/japanUniversity/3107.jpg);
+}
+.timeline__event--type1 .timeline__event__description .slide1_img8 {
+  background-image: url(/src/commons/images/HDHQ/kk1.jpg);
+}
+.timeline__event--type1 .timeline__event__description .slide1_img9 {
+  background-image: url(/src/commons/images/HDHQ/hđ.jpg);
+}
+.timeline__event--type1 .timeline__event__description .slide1_img10 {
+  background-image: url(/src/commons/images/HDHQ/td.jpg);
 }
 
 /* image slide 2 */
@@ -283,7 +313,7 @@ h3 {
   background-image: url(/src/commons/images/Đ.P.Bắc\ 1.jpg);
 }
 .timeline__event--type3 .timeline__event__description .slide3_img6 {
-  background-image: url(/src/commons/images/đồng\ hành.jpg);
+  background-image: url(/src/commons/images/ẢNH\ SÂN\ BAY\ 2.jpg);
 }
 .timeline__event--type3 .timeline__event__description .slide3_img7 {
   background-image: url(/src/commons/images/ảnh\ trước\ xuất\ cảnh.jpg);

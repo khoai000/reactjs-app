@@ -1,16 +1,17 @@
 .about-wrap {
   height: max-content;
   width: 90%;
-  margin: 120px auto;
+  margin: 200px auto 120px;
   background: rgba(231, 228, 223, 0.5);
   border-radius: 12px;
   padding-top: 80px;
   padding-bottom: 80px;
+  padding-left: 80px;
 }
 .about-left {
   flex: 40%; /* Đặt tỉ lệ cho phần trái là 30% */
   /* background: wheat; */
-  height: max-content;
+  /* height: 500px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,6 +22,7 @@
   /* background: linear-gradient(45deg, #ff2b2b, rgb(197, 197, 197)); */
   color: #ffffff; /* Màu chữ trắng */ /* Đặt tỉ lệ cho phần trái là 30% */
   height: max-content;
+  padding-left: 60px;
 }
 
 .about-right__link p {
@@ -72,13 +74,20 @@
   transform: scale(1.02);
   display: flex;
   align-items: flex-start;
-  font-size: 21px;
+  font-size: 23px;
+  line-height: 40px;
+  margin-bottom: 18px;
 }
 
 .about-right__content p {
   font-family: "Arial" !important;
   font-weight: 500;
   margin-left: 12px;
+  font-size: 1em;
+  line-height: 150%;
+  /* text-align: center; */
+  letter-spacing: 0.5px;
+  text-indent: 32px !important;
 }
 
 .about-right__content img {
@@ -87,15 +96,9 @@
   color: #fff;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
     0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
-  width: 48px;
+  width: 64px;
 }
 
-.about-right__content p {
-  font-size: 1em;
-  line-height: 150%;
-  /* text-align: center; */
-  letter-spacing: 0.5px;
-}
 .about-right__content p:first-of-type {
   text-indent: 18px; /* Điều chỉnh giá trị thụt lề theo ý muốn của bạn */
 }
@@ -113,6 +116,7 @@
   border-radius: 10px;
   box-shadow: 5px 5px 0px #000;
   transition: all 0.3s ease;
+  margin-top: 12px;
 }
 
 .comic-button:hover {

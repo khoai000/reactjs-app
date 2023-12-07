@@ -5,7 +5,7 @@ import logo from "../../assets/Logo_BCN.png";
 const Banner = () => {
   return (
     <div className="bg-header flex items-center justify-center background_cover">
-      <div className=" flex items-center justify-center z-10 -mt-[340px]">
+      <div className=" flex items-center justify-center z-10 -mt-[400px]">
         <div class="bg-content rounded-3xl  py-10">
           <div class=" ">
             <p class="text-2xl mb-4 italic text-slate-800">

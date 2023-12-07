@@ -1,7 +1,7 @@
 .license-wrap {
-  /* height: 100vh; */
+  height: max-content;
   width: 90%;
-  margin: 0 auto;
+  margin: 150px auto 120px;
   /* background: wheat; */
   display: flex;
   align-items: center;
@@ -11,23 +11,23 @@
 
 .license-wrap div h1 {
   text-transform: uppercase;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     -225deg,
     #231557 0%,
     #44107a 29%,
     #ff1361 67%,
     #fff800 100%
-  );
+  ); */
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
+  /* color: #fff;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 3s linear infinite;
+  animation: textclip 3s linear infinite; */
   display: inline-block;
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 12px;
 }
 
@@ -38,13 +38,14 @@
 }
 
 .license-content {
-  width: 100%;
+  width: max-content;
   --b: 0.5em; /* border width */
   --c: 3em; /* corner size */
   --r: 2em; /* corner rounding */
   position: relative;
+  margin-top: 24px;
   border: solid var(--b) transparent;
-  padding: 12px 8px;
+  padding: 40px 8px;
 }
 
 .license-content::before {
@@ -64,6 +65,7 @@
 }
 
 .license-content img {
-  width: 580px;
-  height: 780px;
+  width: 450px;
+  height: 650px;
+  margin: 0 60px;
 }

@@ -17,7 +17,7 @@ const OderCard = ({ props }) => {
   return (
     <div class="plan">
       <div class="inner">
-        <div class="pricing flex bg-slate-700">
+        <div class="pricing flex justify-center">
           <img
             src={props.country ? TypeMapCountry[props.country] : japan}
             alt="flag"

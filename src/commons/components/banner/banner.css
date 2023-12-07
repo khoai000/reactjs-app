@@ -8,9 +8,8 @@
 }
 
 h1 {
-  font-size: xx-large;
   font-weight: 800;
-  /* color: white; */
+  color: white;
 }
 
 .bg-content {
@@ -21,7 +20,7 @@ h1 {
     rgba(206, 38, 8, 0.6)
   ); */
   background: rgba(231, 228, 223, 0.725);
-  padding: 36px;
+  padding: 28px;
 }
 
 .background_cover {
