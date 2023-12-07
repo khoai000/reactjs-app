@@ -8,7 +8,7 @@ const Banner = () => {
       <div className=" flex items-center justify-center z-10 -mt-[340px]">
         <div class="bg-content rounded-3xl  py-10">
           <div class=" ">
-            <p class="text-xl mb-4 italic text-slate-800">
+            <p class="text-2xl mb-4 italic text-slate-800">
               Welcome to bcnhr.com.vn
             </p>
 

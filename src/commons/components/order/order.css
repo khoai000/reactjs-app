@@ -1,39 +1,42 @@
 .order-wrap {
-  height: 300vh;
+  height: max-content;
   width: 90%;
   /* background: violet; */
-  margin: 80px auto 30px;
+  margin: 60px auto 90px;
   display: flex;
   align-content: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  padding: 0 30px;
+  border: 1px solid #fff;
+  border-radius: 12px;
 }
 
 .order-wrap h1 {
   text-transform: uppercase;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     -225deg,
     #231557 0%,
     #44107a 29%,
     #ff1361 67%,
     #fff800 100%
-  );
+  ); */
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
+  color: #000000;
   background-clip: text;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 3s linear infinite;
+  animation: textclip 3s linear infinite; */
   display: inline-block;
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 32px;
 }
 
-@keyframes textclip {
+/* @keyframes textclip {
   to {
     background-position: 200% center;
   }
-}
+} */

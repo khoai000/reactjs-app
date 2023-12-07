@@ -10,7 +10,7 @@
 h1 {
   font-size: xx-large;
   font-weight: 800;
-  color: white;
+  /* color: white; */
 }
 
 .bg-content {
