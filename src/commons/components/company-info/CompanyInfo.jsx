@@ -5,9 +5,9 @@ import info from "../../images/info2.jpg";
 
 const CompanyInfo = () => {
   return (
-    <div className="info-wrap">
-      <div className="mt-4 !text-slate-800 flex flex-col items-center">
-        <h1 className="">VỀ CHÚNG TÔI</h1>
+    <div className="info-wrap" id="info">
+      <div className="mt-4 flex flex-col items-center">
+        <h1 className="!text-slate-900">VỀ CHÚNG TÔI</h1>
         <img src={CT} alt="CT" />
         <ul className="mt-6">
           <li>

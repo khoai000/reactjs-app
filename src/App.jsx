@@ -22,7 +22,7 @@ function App() {
       <CompanyInfo />
       <CompanyResult />
       <CustomerReview />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

@@ -19,14 +19,15 @@ const CompanyResult = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 4000,
+    speed: 2000,
     autoplaySpeed: 800,
     pauseOnHover: true,
+    // focusOnSelect: true,
   };
   return (
-    <div className="activity-wrap">
+    <div className="activity-wrap" id="activity">
       <div className="mt-12">
-        <h1 className="">CÁC HOẠT ĐỘNG TẠI BCN HR</h1>
+        <h1 className="!text-slate-900">CÁC HOẠT ĐỘNG TẠI BCN HR</h1>
       </div>
       <div className="activity-achievements">
         <div class="achievement" data-aos="zoom-in">
@@ -57,8 +58,8 @@ const CompanyResult = () => {
           </div>
         </div>
       </div>
-      <div className="mt-6">
-        <h1 className="">MỘT SỐ HÌNH ẢNH</h1>
+      <div className="mt-8">
+        <h1 className="!text-slate-900">HÌNH ẢNH VỀ CÔNG TY</h1>
       </div>
 
       <div class="timeline !-mt-4 pb-20">
@@ -77,15 +78,15 @@ const CompanyResult = () => {
             <div class="timeline__event__description">
               <Slider {...settings}>
                 <div className="slide1_img1"></div>
-                <div className="slide1_img2"></div>
-                <div className="slide1_img3"></div>
-                <div className="slide1_img4"></div>
-                <div className="slide1_img5"></div>
-                {/* <div className="slide1_img6"></div> */}
-                <div className="slide1_img7"></div>
                 <div className="slide1_img8"></div>
                 <div className="slide1_img9"></div>
                 <div className="slide1_img10"></div>
+                <div className="slide1_img2"></div>
+                <div className="slide1_img4"></div>
+                {/* <div className="slide1_img5"></div> */}
+                <div className="slide1_img6"></div>
+                <div className="slide1_img7"></div>
+                <div className="slide1_img3"></div>
               </Slider>
             </div>
           </div>

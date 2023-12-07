@@ -13,9 +13,9 @@ const BusinessLicense = () => {
   }, []);
 
   return (
-    <div className="license-wrap">
-      <div className="mt-8 !text-slate-800">
-        <h1 className="">GIẤY PHÉP KINH DOANH</h1>
+    <div className="license-wrap" id="license">
+      <div className="mt-8">
+        <h1 className="!text-slate-900">GIẤY PHÉP KINH DOANH</h1>
       </div>
       <div className="license-content flex flex-row wrapper justify-evenly">
         <div

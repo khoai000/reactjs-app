@@ -1,17 +1,23 @@
 .new_footer_area {
   background: #fbfbfd;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .new_footer_top {
-  padding: 120px 0px 270px;
+  width: 90%;
+  padding: 120px 120px 200px;
   position: relative;
   overflow-x: hidden;
 }
+.new_footer_top footer {
+  display: flex;
+  justify-content: space-between;
+}
 .new_footer_area .footer_bottom {
   padding-top: 5px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .footer_bottom {
   font-size: 14px;
@@ -208,3 +214,21 @@ h6 {
 }
 
 /*************footer End*****************/
+
+.text-hover {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  /* color: #54b3d6; */
+  /* padding: 0 0.25rem; */
+  /* margin: 0 -0.25rem; */
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-left: 6px;
+  font-size: 18px;
+  margin-top: 6px;
+  word-spacing: 2%;
+  font-weight: 400;
+}
+
+.text-hover:hover {
+  color: #fff;
+  box-shadow: inset 220px 0 0 0 #54b3d6;
+}

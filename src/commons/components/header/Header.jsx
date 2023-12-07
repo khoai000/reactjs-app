@@ -5,35 +5,50 @@ import logo from "../../assets/Logo_BCN.png";
 const Header = () => {
   return (
     <div className="header-wrap">
-      <header class="w-full text-gray-700 rounded-lg shadow-sm body-font">
-        <div class="container flex flex-col flex-wrap items-center px-4 py-3 mx-auto md:flex-row">
+      <header class="w-full text-gray-700 rounded-full shadow-sm body-font">
+        <div class="container flex flex-col flex-wrap items-center px-1 py-3 mx-auto md:flex-row">
           <nav class="flex flex-wrap items-center text-base lg:w-2/5 md:ml-auto">
             <a
-              href="#_"
-              class="mr-5 font-semibold hover:text-gray-900 glow-on-hover"
+              href="#about"
+              class="mr-6 font-semibold hover:text-gray-900 glow-on-hover"
             >
               Giới thiệu
             </a>
             <a
-              href="#_"
-              class="mr-5 font-semibold hover:text-gray-900 glow-on-hover"
+              href="#order"
+              class="mr-6 font-semibold hover:text-gray-900 glow-on-hover"
             >
-              About
+              Đơn hàng
             </a>
             <a
-              href="#_"
+              href="#license"
               class="font-semibold hover:text-gray-900 glow-on-hover"
             >
-              Contact
+              Giấy phép
             </a>
           </nav>
           <a class="logo flex items-center order-first mb-4 lg:order-none lg:w-1/5 lg:items-center lg:justify-center md:mb-0">
             <img src={logo} alt="logo" className="h-14 w-14" />
           </a>
           <div class="inline-flex items-center h-full ml-5 lg:w-2/5 lg:justify-end lg:ml-0">
-            {/* <a href="#_" class="mr-5 font-medium hover:text-gray-900">
-              Login
-            </a> */}
+            <a
+              href="#info"
+              class="mr-6 font-semibold hover:text-gray-900 glow-on-hover text-2xl"
+            >
+              Về chúng tôi
+            </a>
+            <a
+              href="#activity"
+              class="mr-6 font-semibold hover:text-gray-900 glow-on-hover text-2xl"
+            >
+              Hoạt động
+            </a>
+            <a
+              href="#footer"
+              class="mr-6 font-semibold hover:text-gray-900 glow-on-hover text-2xl"
+            >
+              Liên hệ
+            </a>
             <button class="Btn">
               <div class="sign">
                 <svg viewBox="0 0 512 512">

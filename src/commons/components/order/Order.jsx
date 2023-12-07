@@ -127,9 +127,9 @@ var settings = {
 
 const Order = () => {
   return (
-    <div className="order-wrap">
+    <div className="order-wrap" id="order">
       <div className="!mt-10">
-        <h1 className="!text-slate-800">DANH SÁCH ĐƠN HÀNG</h1>
+        <h1 className="!text-slate-900">DANH SÁCH ĐƠN HÀNG</h1>
       </div>
       <Slider {...settings}>
         {orders.map((item, index) => {

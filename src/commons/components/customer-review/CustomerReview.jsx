@@ -10,12 +10,15 @@ import m2 from "../../assets/m2.jpg";
 const CustomerReview = () => {
   return (
     <div classNameName="review-wrap">
-      <div className="flex items-center justify-center py-5">
+      <div className="flex items-center justify-center pb-12">
         <div className="w-full border-t border-b border-gray-200 px-5 text-gray-800">
-          <div className="w-full max-w-6xl mx-auto">
-            <div className="text-center w-full mx-auto">
-              <h1 className="text-comp text-3xl">KHÁCH HÀNG NÓI GÌ VỀ</h1>
-              <h3 className="text-4xl mb-5 font-light">
+          <div className="w-full max-w-full mx-auto">
+            <div className="text-center w-full mx-auto ">
+              <h1 className="text-comp !text-2xl !-mt-6 !text-slate-900">
+                KHÁCH HÀNG NÓI GÌ VỀ
+              </h1>
+              <br />
+              <h3 className="text-comp !text-4xl mb-5 font-extrabold !text-slate-900">
                 CÔNG TY CỔ PHẦN CUNG ỨNG NHÂN LỰC BCN QUỐC TẾ
               </h3>
               <div className="text-center mb-10">
@@ -26,21 +29,21 @@ const CustomerReview = () => {
                 <span className="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
               </div>
             </div>
-            <div className="-mx-3 md:flex items-start">
+            <div className="-mx-3 md:flex flex items-start justify-around px-44">
               <div className="px-3 md:w-1/3">
                 <div className="w-full mx-auto rounded-lg bg-slate-200 border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-10 h-10 bg-slate-50 border border-gray-200">
+                    <div className="overflow-hidden rounded-full w-16 h-16 bg-slate-50 border border-gray-200">
                       <img src={wm1} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
+                      <h6 className="font-bold text-xl uppercase text-gray-700">
                         Trần Thị Nga
                       </h6>
                     </div>
                   </div>
                   <div className="w-full">
-                    <p className="text-sm leading-tight">
+                    <p className="text-xl leading-tight">
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
@@ -56,17 +59,17 @@ const CustomerReview = () => {
                 </div>
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                    <div className="overflow-hidden rounded-full w-16 h-16 bg-gray-50 border border-gray-200">
                       <img src={wm2} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
+                      <h6 className="font-bold text-xl uppercase text-gray-600">
                         Nguyễn Thị Vân Anh
                       </h6>
                     </div>
                   </div>
                   <div className="w-full">
-                    <p className="text-sm leading-tight">
+                    <p className="text-xl leading-tight">
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
@@ -84,17 +87,17 @@ const CustomerReview = () => {
               <div className="px-3 md:w-1/3">
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                    <div className="overflow-hidden rounded-full w-16 h-16 bg-gray-50 border border-gray-200">
                       <img src={m1} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
+                      <h6 className="font-bold text-xl uppercase text-gray-600">
                         Nguyễn Văn An
                       </h6>
                     </div>
                   </div>
                   <div className="w-full">
-                    <p className="text-sm leading-tight">
+                    <p className="text-xl leading-tight">
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
@@ -111,17 +114,17 @@ const CustomerReview = () => {
                 </div>
                 <div className="w-full mx-auto rounded-lg bg-slate-200 border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                    <div className="overflow-hidden rounded-full w-16 h-16 bg-gray-50 border border-gray-200">
                       <img src={m2} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
+                      <h6 className="font-bold text-xl uppercase text-gray-600">
                         Đinh Hoàng Hải
                       </h6>
                     </div>
                   </div>
                   <div className="w-full">
-                    <p className="text-sm leading-tight">
+                    <p className="text-xl leading-tight">
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
@@ -139,17 +142,17 @@ const CustomerReview = () => {
               <div className="px-3 md:w-1/3">
                 <div className="w-full mx-auto rounded-lg bg-slate-200 border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                    <div className="overflow-hidden rounded-full w-16 h-16 bg-gray-50 border border-gray-200">
                       <img src={wm3} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
+                      <h6 className="font-bold text-xl uppercase text-gray-600">
                         Đoàn Kiều Chi
                       </h6>
                     </div>
                   </div>
                   <div className="w-full">
-                    <p className="text-sm leading-tight">
+                    <p className="text-xl leading-tight">
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
@@ -165,17 +168,17 @@ const CustomerReview = () => {
                 </div>
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                    <div className="overflow-hidden rounded-full w-16 h-16 bg-gray-50 border border-gray-200">
                       <img src={wm4} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
+                      <h6 className="font-bold text-xl uppercase text-gray-600">
                         Nguyễn Thị Thi
                       </h6>
                     </div>
                   </div>
                   <div className="w-full">
-                    <p className="text-sm leading-tight">
+                    <p className="text-xl leading-tight">
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>

@@ -45,7 +45,7 @@
 .activity-achievements {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 200px;
   align-items: center;
   flex-wrap: wrap;
 }

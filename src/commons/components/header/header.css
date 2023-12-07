@@ -9,18 +9,17 @@
 header {
   position: absolute;
   top: 24px;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 nav a {
   font-size: 24px;
   margin-left: 6px;
-  font-family: sans-serif;
 }
 
 nav div a {
-  font-size: 18px;
-  margin-left: 6px;
-  font-family: sans-serif;
+  font-size: 24px;
+  margin-right: 6px;
 }
 
 .glow-on-hover {
@@ -28,7 +27,7 @@ nav div a {
     to right,
     #cb0000 25%,
     #cb0000 50%,
-    #1700d5 50%
+    #26b50c 50%
   );
   background-size: 200% 100%;
   background-position: -100%;
@@ -38,6 +37,7 @@ nav div a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
+  font-weight: 700 !important;
 }
 
 .glow-on-hover:before {
@@ -62,8 +62,9 @@ nav div a {
 
 .logo img {
   position: absolute;
-  min-width: 84px;
-  height: 84px;
+  min-width: 120px;
+  height: 120px;
+  margin-bottom: -1px;
 }
 
 .Btn {

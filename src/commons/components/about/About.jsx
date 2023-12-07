@@ -17,7 +17,7 @@ const About = () => {
     });
   }, []);
   return (
-    <div className="about-wrap flex flex-row">
+    <div className="about-wrap flex flex-row" id="about">
       <div className="about-left" data-aos="slide-up" data-aos-offset="200">
         <img src={university} alt="" width={400} className="rounded-2xl" />
       </div>
@@ -28,10 +28,10 @@ const About = () => {
       >
         <div className="pr-24">
           <div className="mb-3 text-4xl">
-            <h1 className="about-right__title text-3xl !text-slate-800">
+            <h1 className="about-right__title text-3xl !text-slate-900">
               CÔNG TY CỔ PHẦN CUNG ỨNG NHÂN LỰC
             </h1>
-            <h1 className="about-right__title text-5xl mt-2 !text-slate-800">
+            <h1 className="about-right__title text-5xl mt-2 !text-slate-900">
               BCN QUỐC TẾ
             </h1>
           </div>

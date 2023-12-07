@@ -14,7 +14,7 @@
   --border-color: #7fffd4;
   --link-hover-color: #e76f51;
 
-  --body-font-family: "sans-serif";
+  --body-font-family: "Roboto";
 
   --h1-font-size: 68px;
   --h2-font-size: 46px;
@@ -39,8 +39,8 @@
 
 * {
   /* background-color: var(--white-color); */
-  font-family: var(--body-font-family);
-  /* color: var(--white-color) !important; */
+  font-family: var(--body-font-family) !important;
+
   margin: 0;
   padding: 0;
   border: 0;
@@ -49,6 +49,11 @@
   &:after {
     box-sizing: border-box;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 8.5rem; 
 }
 
 body {
