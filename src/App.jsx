@@ -15,8 +15,8 @@ function App() {
       <div className="fixed w-full top-0 left-0">
         <Header />
       </div>
-      {/* <Banner /> */}
-      {/* <About /> */}
+      <Banner />
+      <About />
       <Order />
       {/* <BusinessLicense /> */}
       {/* <CompanyInfo /> */}

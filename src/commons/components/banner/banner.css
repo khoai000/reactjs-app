@@ -1,8 +1,8 @@
 .bg-header {
-  background-color: white;
+  /* background-color: white; */
   position: relative;
   overflow: hidden;
-  min-height: 620px;
+  /* min-height: 620px; */
   text-align: center;
   height: 100vh;
 }
@@ -15,12 +15,13 @@ h1 {
 
 .bg-content {
   height: max-content;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     rgba(231, 228, 223, 0.4),
     rgba(206, 38, 8, 0.6)
-  );
-  padding: 24px;
+  ); */
+  background: rgba(231, 228, 223, 0.725);
+  padding: 36px;
 }
 
 .background_cover {

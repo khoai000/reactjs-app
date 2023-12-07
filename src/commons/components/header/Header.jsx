@@ -5,7 +5,7 @@ import logo from "../../assets/Logo_BCN.png";
 const Header = () => {
   return (
     <div className="header-wrap">
-      <header class="w-full text-gray-700 rounded-lg border-t-2 border-gray-950 shadow-sm body-font ">
+      <header class="w-full text-gray-700 rounded-lg shadow-sm body-font">
         <div class="container flex flex-col flex-wrap items-center px-4 py-3 mx-auto md:flex-row">
           <nav class="flex flex-wrap items-center text-base lg:w-2/5 md:ml-auto">
             <a
@@ -27,7 +27,7 @@ const Header = () => {
               Contact
             </a>
           </nav>
-          <a class="logo flex items-center order-first mb-4 font-medium text-gray-900 lg:order-none lg:w-1/5 title-font lg:items-center lg:justify-center md:mb-0">
+          <a class="logo flex items-center order-first mb-4 lg:order-none lg:w-1/5 lg:items-center lg:justify-center md:mb-0">
             <img src={logo} alt="logo" className="h-14 w-14" />
           </a>
           <div class="inline-flex items-center h-full ml-5 lg:w-2/5 lg:justify-end lg:ml-0">

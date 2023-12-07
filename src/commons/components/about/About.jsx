@@ -24,36 +24,20 @@ const About = () => {
   return (
     <div className="about-wrap flex flex-row">
       <div className="about-left">
-        <div className="flex justify-center items-center p-6 h-full">
-          {/* <Slider {...settings} className="about-left__slider w-[24rem] cover">
-            <img
-              src="https://i.ibb.co/2y0s2qj/bg-image2.jpg"
-              alt="bg-image2"
-              className="rounded-3xl"
-            />
-            <img
-              src="https://i.ibb.co/3hDGSpZ/image1.jpg"
-              alt="bg-image2"
-              className="rounded-3xl"
-            />
-          </Slider> */}
-          <img src={university} alt="" width={500} />
-        </div>
+        <img src={university} alt="" width={400} className="rounded-2xl" />
       </div>
       <div className="about-right flex justify-center items-center">
-        <div className="px-8">
-          <div className="about-right__link">
-            <p>http://bcnhr.com.vn/</p>
+        <div className="pr-24">
+          <div className="mb-3 text-4xl">
+            <h1 className="about-right__title text-3xl !text-slate-800">
+              CÔNG TY CỔ PHẦN CUNG ỨNG NHÂN LỰC
+            </h1>
+            <h1 className="about-right__title text-5xl mt-2 !text-slate-800">
+              BCN QUỐC TẾ
+            </h1>
           </div>
-          <div className="mb-6 ">
-            <div>
-              <h1 className="about-right__title">
-                CÔNG TY CỔ PHẦN CUNG ỨNG NHÂN LỰC
-              </h1>
-            </div>
-            <div>
-              <h1 className="about-right__title text-3xl  ">BCN QUỐC TẾ</h1>
-            </div>
+          <div className="about-right__link text-center">
+            <p>http://bcnhr.com.vn/</p>
           </div>
           <div className="about-right__content">
             <img src={leverUP} alt="icon1" className="" />
@@ -74,20 +58,21 @@ const About = () => {
           <div className="about-right__content">
             <img src={location} alt="icon3" className="" />
             <p>
-              Trung tâm đào tạo riêng biệt với 40 phòng học đạt chuẩn, được
-              trang bị đầy đủ các thiết bị công nghệ thông tin phục vụ cho quá
-              trình giảng dạy và học tập
+              Với trên 40 chi nhánh và văn phòng trải khắp cả nước, được trang
+              bị đầy đủ các thiết bị công nghệ thông tin phục vụ cho quá trình
+              giảng dạy và học tập
             </p>
           </div>
-          <Tooltip
-            title="Xem chi tiết danh sách địa chỉ trên cả nước của chúng tôi tại đây"
-            color="cyan"
-            placement="topLeft"
-          >
-            <div className="mt-6">
-              <button class="comic-button">Địa chỉ!</button>
-            </div>
-          </Tooltip>
+          <div className="mt-6">
+            <Tooltip
+              title="Xem chi tiết danh sách địa chỉ trên cả nước của chúng tôi tại đây"
+              color="cyan"
+              placement="topLeft"
+              className="comic-button"
+            >
+              <button class="">Địa chỉ!</button>
+            </Tooltip>
+          </div>
         </div>
       </div>
     </div>
