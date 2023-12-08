@@ -5,6 +5,7 @@
   /* min-height: 620px; */
   text-align: center;
   height: 100vh;
+  
 }
 
 h1 {
@@ -36,4 +37,35 @@ h1 {
   align-items: center;
   color: #ffffff; /* Màu chữ trắng hoặc màu khác tùy chọn */
   text-align: center;
+}
+
+@media only screen and (max-width: 1366px) {
+  p,
+  h1 {
+    font-size: 18px !important;
+  }
+  .bg-content {
+    height: max-content;
+  }
+  img {
+    height: 64px !important;
+    width: 64px !important;
+    margin: 18px 8px !important;
+  }
+  .bg-header div:first-child {
+    margin-top: -100px !important;
+  }
+  .bg-content div div {
+    font-size: 16px !important;
+    margin-top: -10px !important;
+  }
+  .bg-content div div:last-child {
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-wrap {
+    display: none;
+  }
 }

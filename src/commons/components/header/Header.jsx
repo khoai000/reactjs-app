@@ -7,7 +7,7 @@ const Header = () => {
     <div className="header-wrap">
       <header class="w-full text-gray-700 rounded-full shadow-sm body-font">
         <div class="container flex flex-col flex-wrap items-center px-1 py-3 mx-auto md:flex-row">
-          <nav class="flex flex-wrap items-center text-base lg:w-2/5 md:ml-auto">
+          <nav class="flex flex-wrap items-center lg:w-2/5 md:ml-auto">
             <a
               href="#about"
               class="mr-6 font-semibold hover:text-gray-900 glow-on-hover"
@@ -30,7 +30,7 @@ const Header = () => {
           <a class="logo flex items-center order-first mb-4 lg:order-none lg:w-1/5 lg:items-center lg:justify-center md:mb-0">
             <img src={logo} alt="logo" className="h-14 w-14" />
           </a>
-          <div class="inline-flex items-center h-full ml-5 lg:w-2/5 lg:justify-end lg:ml-0">
+          <div class="link-right inline-flex items-center h-full ml-5 lg:w-2/5 lg:justify-end lg:ml-0">
             <a
               href="#info"
               class="mr-6 font-semibold hover:text-gray-900 glow-on-hover text-2xl"
