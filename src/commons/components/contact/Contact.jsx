@@ -11,9 +11,14 @@ const Contact = () => {
           <div class="coccoc-alo-ph-img-circle"></div>
         </div>
       </div> */}
-      <a href="tel:+8497 626 5599">
-        <div class="coccoc-alo-ph-img-circle"></div>
-      </a>
+      <div className="phone flex flex-row items-center justify-center">
+        <a href="tel:+8497 626 5599" className="inline">
+          <div class="coccoc-alo-ph-img-circle"></div>
+        </a>
+        <p className="px-4 py-2 font-semibold rounded-xl -ml-2 -mb-1 2xl:text-3xl">
+          097 626 5599
+        </p>
+      </div>
     </div>
   );
 };

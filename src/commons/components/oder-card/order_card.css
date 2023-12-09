@@ -19,7 +19,7 @@
   align-items: center;
   padding: 40px 24px 32px;
   background: linear-gradient(#bafae2, #eac6ff);
-border-radius: 12px;
+  border-radius: 12px;
   /* justify-content: center; */
 }
 
@@ -122,4 +122,34 @@ border-radius: 12px;
 .plan .button:hover,
 .plan .button:focus {
   background-color: #4133b7;
+}
+
+@media only screen and (max-width: 1366px) {
+  .features span {
+    font-size: 16px !important;
+  }
+  .features span strong {
+    font-size: 18px !important;
+  }
+
+  .features li {
+    margin-bottom: 28px !important;
+  }
+
+  .title {
+    font-size: 24px !important;
+  }
+
+  .info {
+    font-size: 18px !important;
+    margin-bottom: 26px !important;
+    padding: 0 12px !important;
+    margin-top: 3px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-wrap {
+    display: none;
+  }
 }

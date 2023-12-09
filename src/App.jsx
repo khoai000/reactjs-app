@@ -24,7 +24,7 @@ function App() {
       <CompanyResult />
       <CustomerReview />
       <Footer />
-      <div className="fixed left-0 bottom-0 z-[9999]">
+      <div className="fixed left-0   bottom-0 2xl:bottom-20 z-[9999]">
         <Contact />
       </div>
     </>
