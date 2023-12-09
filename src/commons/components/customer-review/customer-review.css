@@ -36,3 +36,32 @@
     background-position: 200% center;
   }
 }
+
+@media only screen and (max-width: 1366px) {
+  .bg-avt {
+    width: 48px !important;
+    height: 48px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  h6 {
+    font-size: 18px !important;
+  }
+  p {
+    font-size: 16px !important;
+    /* margin-top: px !important; */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-wrap {
+    display: none;
+  }
+}

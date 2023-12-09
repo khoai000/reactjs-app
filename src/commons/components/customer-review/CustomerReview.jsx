@@ -33,7 +33,7 @@ const CustomerReview = () => {
               <div className="px-3 md:w-1/3">
                 <div className="w-full mx-auto rounded-lg bg-slate-200 border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-16 h-16 bg-slate-50 border border-gray-200">
+                    <div className="overflow-hidden rounded-full w-16 h-16 bg-avt bg-slate-50 border border-gray-200">
                       <img src={wm1} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
@@ -59,7 +59,7 @@ const CustomerReview = () => {
                 </div>
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-16 h-16 bg-gray-50 border border-gray-200">
+                    <div className="overflow-hidden rounded-full w-16 h-16 bg-avt bg-gray-50 border border-gray-200">
                       <img src={wm2} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
@@ -87,7 +87,7 @@ const CustomerReview = () => {
               <div className="px-3 md:w-1/3">
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-16 h-16 bg-gray-50 border border-gray-200">
+                    <div className="overflow-hidden rounded-full w-16 h-16 bg-avt bg-gray-50 border border-gray-200">
                       <img src={m1} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
@@ -114,7 +114,7 @@ const CustomerReview = () => {
                 </div>
                 <div className="w-full mx-auto rounded-lg bg-slate-200 border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-16 h-16 bg-gray-50 border border-gray-200">
+                    <div className="overflow-hidden rounded-full w-16 h-16 bg-avt bg-gray-50 border border-gray-200">
                       <img src={m2} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
@@ -142,7 +142,7 @@ const CustomerReview = () => {
               <div className="px-3 md:w-1/3">
                 <div className="w-full mx-auto rounded-lg bg-slate-200 border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-16 h-16 bg-gray-50 border border-gray-200">
+                    <div className="overflow-hidden rounded-full w-16 h-16 bg-avt bg-gray-50 border border-gray-200">
                       <img src={wm3} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
@@ -168,7 +168,7 @@ const CustomerReview = () => {
                 </div>
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-16 h-16 bg-gray-50 border border-gray-200">
+                    <div className="overflow-hidden rounded-full w-16 h-16 bg-avt bg-gray-50 border border-gray-200">
                       <img src={wm4} alt="" />
                     </div>
                     <div className="flex-grow pl-3">

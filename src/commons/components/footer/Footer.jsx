@@ -8,23 +8,45 @@ import emailjs from "emailjs-com";
 
 const Footer = () => {
   const [form] = Form.useForm();
+  const [messageApi, contextHolder] = message.useMessage();
+
+  const success = () => {
+    messageApi.open({
+      type: "success",
+      content: "Thành công",
+      className: "custom-class",
+      style: {
+        marginTop: "20vh",
+      },
+    });
+  };
+  const loading = () => {
+    messageApi.open({
+      type: "loading",
+      content: "Đang thực hiện",
+      className: "custom-class",
+      style: {
+        marginTop: "20vh",
+      },
+    });
+  };
   const onFinish = useCallback(
     async (values) => {
       try {
-        const sending = message.loading("Sending...");
+        loading();
         const result = await emailjs.send(
           "service_xcauajq",
           "template_gyir19j",
           values,
           "GHADjin2iHQ-vi5Jy"
         );
+        message.destroy();
         if (result) {
-          message.success("Send message successfull!");
+          success();
           form.resetFields();
         } else {
           message.error("Failed!");
         }
-        sending();
       } catch (error) {
         console.log(error);
       }
@@ -35,11 +57,16 @@ const Footer = () => {
     <>
       <footer className="new_footer_area bg_color" id="footer">
         <div className="new_footer_top">
-          <footer class="px-3 lg:px-9 border-t-2 bg-gray-50">
+          <footer class="px-3 lg:px-5 border-t-2 bg-gray-50">
             <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4 w-full">
               <div class="sm:col-span-2">
                 <a href="#" class="inline-flex items-center">
-                  <img src={logo} alt="logo" class="h-20 w-20" />
+                  <img
+                    src={logo}
+                    alt="logo"
+                    class="h-20 w-20"
+                    className="logo-contact"
+                  />
                   <span class="ml-2 text-2xl font-bold tracking-wide text-gray-800 text-center">
                     CÔNG TY CỔ PHẦN CUNG ỨNG NHÂN LỰC <br />{" "}
                     <strong className="text-3xl">BCN QUỐC TẾ</strong>
@@ -78,7 +105,7 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div class="flex flex-col gap-2 mt-5">
+              <div class="flex flex-col gap-2 mt-5 program-list">
                 <h2 class="!text-xl font-bold tracking-wide text-gray-900">
                   CHƯƠNG TRÌNH ĐÀO TẠO
                 </h2>
@@ -88,7 +115,7 @@ const Footer = () => {
                 <p className="text-hover">Đào Tạo Tiếng Đài Loan</p>
               </div>
 
-              <div className="mt-5">
+              <div className="mt-5 contact-link">
                 <p class="!text-xl font-bold tracking-wide text-gray-900">
                   LIÊN HỆ VỚI CHÚNG TÔI
                 </p>
@@ -143,7 +170,7 @@ const Footer = () => {
                   </div>
                 </div> */}
                 <div className="text-xl text-center mb-2 font-semibold">
-                  Hãy để lại thông tin để chúng tôi tư vấn cho bạn
+                  <h3>Hãy để lại thông tin để chúng tôi tư vấn cho bạn</h3>
                 </div>
                 <Form
                   form={form}
@@ -165,7 +192,7 @@ const Footer = () => {
                   className="p-2 pt-6 bg-slate-200 rounded-lg"
                 >
                   <Form.Item
-                    label="Tên"
+                    label="Họ & Tên"
                     name="name"
                     rules={[
                       {
@@ -197,6 +224,7 @@ const Footer = () => {
                       span: 16,
                     }}
                   >
+                    {contextHolder}
                     <Button
                       type="primary"
                       htmlType="submit"

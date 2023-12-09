@@ -334,6 +334,16 @@ h3 {
     padding: 8px 18px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+
+  .timeline__event__description div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 550px;
+    height: 400px;
+  }
+  .timeline__event__icon {
+    padding: 12px !important;
+  }
 }
 
 @media screen and (max-width: 600px) {

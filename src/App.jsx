@@ -8,10 +8,11 @@ import CompanyInfo from "./commons/components/company-info/CompanyInfo";
 import CompanyResult from "./commons/components/company-result/CompanyResult";
 import CustomerReview from "./commons/components/customer-review/CustomerReview";
 import Footer from "./commons/components/footer/Footer";
+import Contact from "./commons/components/contact/Contact";
 
 function App() {
   return (
-  <div className="">
+    <>
       <div className="fixed w-full top-0 left-0 z-[9999]">
         <Header />
       </div>
@@ -23,7 +24,10 @@ function App() {
       <CompanyResult />
       <CustomerReview />
       <Footer />
-    </div>
+      <div className="fixed left-0 bottom-0 z-[9999]">
+        <Contact />
+      </div>
+    </>
   );
 }
 
