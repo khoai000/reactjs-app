@@ -5,6 +5,7 @@ import { COUNTRY_TYPE } from "../../constants";
 import Slider from "react-slick";
 import prevArrow from "../../assets/left-arrow.png";
 import nextArrow from "../../assets/right-arrow.png";
+import { useMediaQuery } from "react-responsive";
 
 const orders = [
   {
@@ -85,7 +86,13 @@ const SampleNextArrow = (props) => {
       src={nextArrow}
       alt="prev"
       className={className}
-      style={{ ...style, display: "block", background: "red" }}
+      style={{
+        ...style,
+        display: "block",
+        width: "48px",
+        height: "48px",
+        zIndex: 1,
+      }}
       onClick={onClick}
     />
   );
@@ -101,31 +108,37 @@ function SamplePrevArrow(props) {
       style={{
         ...style,
         display: "block",
-        background: "red",
+        width: "48px",
+        height: "48px",
+        zIndex: 1,
       }}
       onClick={onClick}
     />
   );
 }
 
-var settings = {
-  dots: true,
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  speed: 2000,
-  autoplaySpeed: 800,
-  initialSlide: 0,
-  centerMode: true,
-  centerPadding: "80px",
-  className: "center",
-  pauseOnHover: true,
-  nextArrow: <SampleNextArrow />,
-  prevArrow: <SamplePrevArrow />,
-};
-
 const Order = () => {
+  const isMobile = useMediaQuery({ maxWidth: 599 });
+  const isTabletLap = useMediaQuery({ minWidth: 600, maxWidth: 1366 });
+  const isDesktopLarge = useMediaQuery({ minWidth: 1367 });
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: isTabletLap ? 2 : isMobile ? 1 : 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 800,
+    initialSlide: 0,
+    centerMode: true,
+    centerPadding: "80px",
+    className: "center",
+    pauseOnHover: true,
+    nextArrow: <SampleNextArrow classNam="next-arrow" />,
+    prevArrow: <SamplePrevArrow classNam="prev-arrow" />,
+  };
+
   return (
     <div className="order-wrap" id="order">
       <div className="!mt-10">

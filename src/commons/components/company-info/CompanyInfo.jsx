@@ -8,7 +8,7 @@ const CompanyInfo = () => {
     <div className="info-wrap" id="info">
       <div className="mt-4 flex flex-col items-center">
         <h1 className="!text-slate-900">VỀ CHÚNG TÔI</h1>
-        <img src={CT} alt="CT" />
+        <img src={CT} alt="CT" className="img1" />
         <ul className="mt-6">
           <li>
             <div class="date color-title1">TẦM NHÌN</div>
@@ -62,7 +62,7 @@ const CompanyInfo = () => {
             </div>
           </li>
         </ul>
-        <img src={info} alt="info" className="mt-24" />
+        <img src={info} alt="info" className="mt-24 img2" />
       </div>
     </div>
   );

@@ -139,11 +139,19 @@ nav div a {
     padding: 0px;
   }
   header div:first-child {
-    padding: 10px 8px;
+    padding: 10px 0px;
   }
   nav a {
     font-size: 18px !important;
     margin-left: 3px;
+  }
+
+  nav {
+    padding-left: 28px;
+  }
+
+  .link-right {
+    padding-right: 28px;
   }
 
   .link-right a {
@@ -157,9 +165,8 @@ nav div a {
   }
 
   .logo img {
-    min-width: 100px !important;
-    height: 100px !important;
-    margin-bottom: -2px !important;
+    min-width: 92px !important;
+    height: 92px !important;
   }
 
   .text {

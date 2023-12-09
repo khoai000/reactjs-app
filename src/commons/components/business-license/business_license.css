@@ -69,3 +69,27 @@
   height: 800px;
   margin: 0 60px;
 }
+
+@media only screen and (max-width: 1366px) {
+  /* .license-wrap {
+    height: 100vh;
+  } */
+
+  .license-content {
+    padding: 30px 32px !important;
+  }
+  .license-left img {
+    width: 500px !important;
+    height: 700px !important;
+  }
+  .license-right img {
+    width: 500px !important;
+    height: 700px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-wrap {
+    display: none;
+  }
+}
