@@ -2,45 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --white-color: #ffffff;
-  --primary-color: #bc6c25;
-  --secondary-color: #dda15e;
-  --section-bg-color: #b78752;
-  --custom-btn-bg-color: #bc6c25;
-  --custom-btn-bg-hover-color: #dda15e;
-  --dark-color: #000000;
-  --p-color: #717275;
-  --border-color: #7fffd4;
-  --link-hover-color: #e76f51;
-
-  --body-font-family: "Roboto";
-
-  --h1-font-size: 68px;
-  --h2-font-size: 46px;
-  --h3-font-size: 32px;
-  --h4-font-size: 28px;
-  --h5-font-size: 24px;
-  --h6-font-size: 22px;
-  --p-font-size: 20px;
-  --btn-font-size: 16px;
-  --form-btn-font-size: 18px;
-  --menu-font-size: 16px;
-
-  --border-radius-large: 100px;
-  --border-radius-medium: 20px;
-  --border-radius-small: 10px;
-
-  --font-weight-thin: 200;
-  --font-weight-light: 300;
-  --font-weight-normal: 400;
-  --font-weight-bold: 700;
-}
-
 * {
   /* background-color: var(--white-color); */
-  font-family: var(--body-font-family) !important;
-
+  font-family: Arial !important;
   margin: 0;
   padding: 0;
   border: 0;
@@ -57,23 +21,11 @@ html {
 }
 
 body {
-  background-image: url("/src/commons/images/BNCHR/IMG_6775.JPG");
+  /* background-image: url("/src/commons/images/BNCHR/IMG_6775.JPG"); */
   background-size: cover;
   background-repeat: no-repeat;
   min-width: 100vh;
   background-position: center center;
-  background-attachment: fixed;
-  /* background-color: rgba(255, 255, 255, 0.3); */
-}
-
-@media only screen and (max-width: 1366px) {
-  html {
-    scroll-padding-top: 4.8rem !important;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .header-wrap {
-    display: none;
-  }
+  /* background-attachment: fixed; */
+  background-color: rgba(255, 191, 255, 0.7);
 }

@@ -230,11 +230,11 @@ ul li .descr::before {
   color: var(--color);
 }
 
-img {
+/* img {
   border-radius: 24px;
   width: 1024px;
   margin-bottom: 32px;
-}
+} */
 
 @media only screen and (max-width: 1366px) {
   .info-wrap h1 {

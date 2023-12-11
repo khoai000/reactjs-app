@@ -17,16 +17,16 @@ function App() {
         <Header />
       </div>
       <Banner />
-      <About />
-      <Order />
-      <BusinessLicense />
-      <CompanyInfo />
-      <CompanyResult />
-      <CustomerReview />
-      <Footer />
-      <div className="fixed left-0   bottom-0 2xl:bottom-20 z-[9999]">
+      {/* <About /> */}
+      {/* <Order /> */}
+      {/* <BusinessLicense /> */}
+      {/* <CompanyInfo /> */}
+      {/* <CompanyResult /> */}
+      {/* <CustomerReview /> */}
+      {/* <Footer /> */}
+      {/* <div className="fixed left-0   bottom-0 2xl:bottom-20 z-[9999]">
         <Contact />
-      </div>
+      </div> */}
     </>
   );
 }
