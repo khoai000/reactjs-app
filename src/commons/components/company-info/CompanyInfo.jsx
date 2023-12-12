@@ -8,7 +8,7 @@ const CompanyInfo = () => {
     <div className="info-wrap" id="info">
       <div className="info-wrap-child">
         <h1 className="info-wrap__title">VỀ CHÚNG TÔI</h1>
-        <ul className="mt-6">
+        <ul className="timeline-ul">
           <li>
             <div class="date color-title1">TẦM NHÌN</div>
             {/* <div class="title">Title 1</div> */}

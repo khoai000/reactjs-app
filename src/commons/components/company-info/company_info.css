@@ -41,19 +41,13 @@
 
   .info-wrap__title {
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 12px;
     text-align: center;
     font-weight: 600;
   }
 
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
-
-  h1 {
-    text-align: center;
-  }
-
-  ul {
+  .timeline-ul {
     --col-gap: 2rem;
     --row-gap: 2rem;
     --line-w: 0.25rem;
@@ -67,7 +61,7 @@
   }
 
   /* line */
-  ul::before {
+  .timeline-ul::before {
     content: "";
     grid-column: 1;
     grid-row: 1 / span 20;
@@ -76,12 +70,12 @@
   }
 
   /* row gaps */
-  ul li:not(:last-child) {
+  .timeline-ul li:not(:last-child) {
     margin-bottom: var(--row-gap);
   }
 
   /* card */
-  ul li {
+  .timeline-ul li {
     grid-column: 2;
     --inlineP: 1.125rem;
     margin-inline: var(--inlineP);
@@ -92,25 +86,23 @@
 
   /* Card 1 ------------------------------------------ */
   /* date */
-  ul li .date {
-    --dateH: 3rem;
+  .timeline-ul li .date {
+    --dateH: 40px;
     height: var(--dateH);
     margin-inline: calc(var(--inlineP) * -1);
     text-transform: uppercase;
     text-align: center;
     color: white;
-    font-size: 1.25rem;
-    font-weight: 700;
-
+    font-size: 18px;
+    font-weight: 600;
     display: grid;
     place-content: center;
     position: relative;
-
     border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
   }
 
   /* date flap */
-  ul li .date::before {
+  .timeline-ul li .date::before {
     content: "";
     width: var(--inlineP);
     aspect-ratio: 1;
@@ -122,7 +114,7 @@
   }
 
   /* circle */
-  ul li .date::after {
+  .timeline-ul li .date::after {
     content: "";
     position: absolute;
     width: 2rem;
@@ -136,19 +128,19 @@
   }
 
   /* title descr */
-  ul li .title,
-  ul li .descr {
+  .timeline-ul li .title,
+  .timeline-ul li .descr {
     background: var(--bgColor);
     position: relative;
     padding-inline: 1.5rem;
   }
-  ul li .title {
+  .timeline-ul li .title {
     overflow: hidden;
     padding-block-start: 1.5rem;
     padding-block-end: 1rem;
     font-weight: 500;
   }
-  ul li .descr {
+  .timeline-ul li .descr {
     padding-block-end: 1.5rem;
     font-weight: 300;
     padding-top: 16px;
@@ -158,8 +150,8 @@
   }
 
   /* shadows */
-  ul li .title::before,
-  ul li .descr::before {
+  .timeline-ul li .title::before,
+  .timeline-ul li .descr::before {
     content: "";
     position: absolute;
     width: 90%;
@@ -170,44 +162,44 @@
     filter: blur(4px);
     transform: translate(-50%, 50%);
   }
-  ul li .title::before {
+  .timeline-ul li .title::before {
     bottom: calc(100% + 0.125rem);
   }
 
-  ul li .descr::before {
+  .timeline-ul li .descr::before {
     z-index: -1;
     bottom: 0.25rem;
   }
 
   @media (min-width: 40rem) {
-    ul {
+    .timeline-ul {
       grid-template-columns: 1fr var(--line-w) 1fr;
     }
-    ul::before {
+    .timeline-ul::before {
       grid-column: 2;
     }
-    ul li:nth-child(odd) {
+    .timeline-ul li:nth-child(odd) {
       grid-column: 1;
     }
-    ul li:nth-child(even) {
+    .timeline-ul li:nth-child(even) {
       grid-column: 3;
     }
 
     /* start second card */
-    ul li:nth-child(2) {
+    .timeline-ul li:nth-child(2) {
       grid-row: 2/4;
     }
 
-    ul li:nth-child(odd) .date::before {
+    .timeline-ul li:nth-child(odd) .date::before {
       clip-path: polygon(0 0, 100% 0, 100% 100%);
       left: 0;
     }
 
-    ul li:nth-child(odd) .date::after {
+    .timeline-ul li:nth-child(odd) .date::after {
       transform: translate(-50%, -50%);
       left: calc(100% + var(--col-gap) + var(--line-w) / 2);
     }
-    ul li:nth-child(odd) .date {
+    .timeline-ul li:nth-child(odd) .date {
       border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
     }
   }

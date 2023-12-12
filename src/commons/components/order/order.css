@@ -29,7 +29,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 6px;
+    margin-top: 12px;
   }
 
   .show-all1 {
@@ -55,13 +55,6 @@
     width: 28px;
     height: 32px;
   }
-
-  /* .next-arrow {
-    display: block;
-    height: 28px;
-    width: 28px;
-    z-index: 1;
-  } */
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {

@@ -62,7 +62,7 @@ const orders = [
     info: "Du học Úc",
     count: 20,
     place: "Úc",
-    salary: "2,000",
+    salary: "",
     status: "Tuyển ngay",
   },
 ];
