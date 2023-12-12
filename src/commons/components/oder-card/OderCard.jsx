@@ -4,6 +4,7 @@ import korea from "../../assets/south-korea.png";
 import japan from "../../assets/japan.png";
 import taiwan from "../../assets/taiwan.png";
 import germany from "../../assets/germany.png";
+import aus from "../../assets/australia.png";
 import { COUNTRY_TYPE } from "../../constants";
 
 const TypeMapCountry = {
@@ -11,6 +12,7 @@ const TypeMapCountry = {
   [COUNTRY_TYPE.JAPAN]: japan,
   [COUNTRY_TYPE.TAIWAN]: taiwan,
   [COUNTRY_TYPE.GERMANY]: germany,
+  [COUNTRY_TYPE.AUS]: aus,
 };
 
 const TypeMapMoney = {
@@ -48,12 +50,11 @@ const OderCard = ({ props }) => {
           <img
             src={props.country ? TypeMapCountry[props.country] : japan}
             alt="flag"
+            className="flag"
           />
         </div>
-        <p class="title font-extrabold text-3xl">
-          Đơn hàng {props.title || ""}
-        </p>
-        <div class="info text-xl text-red-900 font-bold h-9 !mb-6">
+        <div class="title">Đơn hàng {props.title || ""}</div>
+        <div class="info">
           {props.info || "Tuyển lao động làm việc nước ngoài."}
         </div>
         <ul class="features">
@@ -74,10 +75,12 @@ const OderCard = ({ props }) => {
             </span>
             <span>
               Số lượng:{" "}
-              <strong className="uppercase">{props.count || 10}</strong>
+              <strong className="uppercase strong-text">
+                {props.count || 10}
+              </strong>
             </span>
           </li>
-          <li>
+          <li className="li-content">
             <span class="icon">
               <svg
                 height="24"
@@ -94,12 +97,12 @@ const OderCard = ({ props }) => {
             </span>
             <span className="">
               Nơi làm việc:{" "}
-              <strong className="uppercase">
-                {props.place || "FUKUSHIMA"}
+              <strong className="uppercase strong-text">
+                {props.place || ""}
               </strong>
             </span>
           </li>
-          <li>
+          <li className="li-content">
             <span class="icon">
               <svg
                 height="24"
@@ -115,13 +118,13 @@ const OderCard = ({ props }) => {
               </svg>
             </span>
             <span>
-              Lương cơ bản:{" "}
-              <strong className="uppercase">{`${props.salary || "190"}K ${
-                TypeMapMoney[props.country]
-              }`}</strong>
+              Lương:{" "}
+              <strong className="uppercase strong-text">
+                {props.salary || ""}
+              </strong>
             </span>
           </li>
-          <li>
+          <li className="li-content">
             <span class="icon">
               <svg
                 height="24"
@@ -137,14 +140,14 @@ const OderCard = ({ props }) => {
               </svg>
             </span>
             <span>
-              Lương quy đổi:{" "}
-              <strong className="uppercase">
-                {`${props.salaryExchange || 0}M VNĐ`}
+              Trạng thái:{" "}
+              <strong className="uppercase strong-text">
+                {`${props.status || ""}`}
               </strong>
             </span>
           </li>
         </ul>
-        <div class="action !mt-6">
+        <div class="action">
           <div class="button" href="#">
             Xem chi tiết
           </div>

@@ -6,9 +6,8 @@ import info from "../../images/info2.jpg";
 const CompanyInfo = () => {
   return (
     <div className="info-wrap" id="info">
-      <div className="mt-4 flex flex-col items-center">
-        <h1 className="!text-slate-900">VỀ CHÚNG TÔI</h1>
-        <img src={CT} alt="CT" className="img1" />
+      <div className="info-wrap-child">
+        <h1 className="info-wrap__title">VỀ CHÚNG TÔI</h1>
         <ul className="mt-6">
           <li>
             <div class="date color-title1">TẦM NHÌN</div>
@@ -49,7 +48,7 @@ const CompanyInfo = () => {
             </div>
           </li>
           <li>
-            <div className="date color-title5">CƠ HỘI ĐẦU TƯ </div>
+            <div className="date color-title5">CƠ HỘI ĐẦU TƯ</div>
             {/* <div className="title">Title 3</div> */}
             <div className="descr">
               BCN HR luôn liên tục tuyển chọn nguồn lao động mới, đào tạo ngoại
@@ -62,7 +61,6 @@ const CompanyInfo = () => {
             </div>
           </li>
         </ul>
-        <img src={info} alt="info" className="mt-24 img2" />
       </div>
     </div>
   );

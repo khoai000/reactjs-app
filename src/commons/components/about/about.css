@@ -169,7 +169,7 @@
     color: #000;
     cursor: pointer;
     margin: auto;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     transition: font-weight 250ms ease-in-out;
     font-style: italic;
@@ -196,16 +196,14 @@
   .about-right__p {
     font-weight: 500;
     margin-left: 6px;
-    font-size: 1em;
-    line-height: 150%;
     /* text-align: center; */
     letter-spacing: 1px;
     text-indent: 32px;
     color: black;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 24px;
     margin-top: 2px;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
 
   .comic-button {
@@ -221,7 +219,7 @@
     border-radius: 10px;
     box-shadow: 5px 5px 0px #000;
     transition: all 0.3s ease;
-    margin-top: 12px;
+    margin-top: 8px;
   }
 
   .comic-button:hover {

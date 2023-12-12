@@ -3,4 +3,5 @@ export const COUNTRY_TYPE = {
   KOREA: "korea",
   GERMANY: "germany",
   TAIWAN: "taiwan",
+  AUS: "australia",
 };

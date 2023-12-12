@@ -1,32 +1,51 @@
 import React from "react";
 import "./header.css";
 import logo from "../../assets/Logo_BCN.png";
+import down from "../../assets/down.png";
 
 const Header = () => {
   return (
     <div className="header-wrap">
       <nav className="">
-        <a className="logo  ">
+        <a href="*" className="logo">
           <img src={logo} className="logo" />
         </a>
-        <a href="#about" className="glow-on-hover">
+        <a href="*" className="glow-on-hover">
           Trang chủ
         </a>
         <a href="#about" className="glow-on-hover">
           Giới thiệu
         </a>
-        <a href="#license" className="glow-on-hover">
+        {/* <a href="#license" className="glow-on-hover">
           Đào tạo
-        </a>
-        <a href="#order" className=" glow-on-hover">
+        </a> */}
+        <a href="#order" className="glow-on-hover">
           Đơn hàng
         </a>
         <a href="#activity" className="glow-on-hover ">
           Tin tức
         </a>
-        <a href="#info" className="glow-on-hover ">
-          Về chúng tôi
-        </a>
+        <div class="dropdown">
+          <p
+            // href=""
+            className="glow-on-hover"
+            onClick={(e) => e.preventDefault()}
+          >
+            Về BCN-HR
+            <img src={down} alt="expand" className="expand inline" />
+          </p>
+          <div class="dropdown-content">
+            <a href="#info" className="text-center">
+              Sứ mệnh
+            </a>
+            <a href="#activity" className="text-center">
+              Hoạt động
+            </a>
+            <a href="#review" className="text-center">
+              Đánh giá
+            </a>
+          </div>
+        </div>
         <a href="#footer" className="glow-on-hover">
           Liên hệ
         </a>

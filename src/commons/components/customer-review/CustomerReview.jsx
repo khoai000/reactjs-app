@@ -9,7 +9,7 @@ import m2 from "../../assets/m2.jpg";
 
 const CustomerReview = () => {
   return (
-    <div classNameName="review-wrap">
+    <div classNameName="review-wrap" id="review">
       <div className="flex items-center justify-center pb-12">
         <div className="w-full border-t border-b border-gray-200 px-5 text-gray-800">
           <div className="w-full max-w-full mx-auto">

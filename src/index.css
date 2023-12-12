@@ -16,7 +16,7 @@
 }
 
 body {
-  background-image: url("/src/commons/images/BNCHR/IMG_6775.JPG");
+  /* background-image: url("/src/commons/images/BNCHR/IMG_6775.JPG"); */
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -31,11 +31,14 @@ html {
 }
 
 @media (min-width: 1536px) {
+  html {
+    scroll-padding-top: 7.5rem;
+  }
 }
 
 @media (min-width: 1280px) and (max-width: 1535px) {
   html {
-    scroll-padding-top: 6.8rem;
+    scroll-padding-top: 6.2rem;
   }
 }
 
