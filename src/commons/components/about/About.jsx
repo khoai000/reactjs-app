@@ -17,61 +17,58 @@ const About = () => {
     });
   }, []);
   return (
-    <div className="about-wrap flex flex-row" id="about">
+    <div className="about-wrap" id="about">
       <div className="about-left" data-aos="slide-up" data-aos-offset="200">
-        <img src={university} alt="" width={400} className="rounded-2xl" />
+        <img src={university} alt="" className="university-image rounded-2xl" />
       </div>
       <div
-        className="about-right flex justify-center items-center"
-        data-aos="fade-left"
-        data-aos-offset="500"
+        className="about-right"
+        // data-aos="fade-left" data-aos-offset="500"
       >
-        <div className="pr-24">
-          <div className="mb-3 text-4xl">
-            <h1 className="about-right__title text-3xl !text-slate-900">
-              CÔNG TY CỔ PHẦN CUNG ỨNG NHÂN LỰC
-            </h1>
-            <h1 className="about-right__title text-5xl mt-2 !text-slate-900">
-              BCN QUỐC TẾ
-            </h1>
-          </div>
-          <div className="about-right__link text-center">
-            <p>http://bcnhr.com.vn/</p>
-          </div>
-          <div className="about-right__content">
-            <img src={leverUP} alt="icon1" className="" />
-            <p className="">
-              BCN-HR trở thành công ty hàng đầu trong lĩnh vực cung cấp nguồn
-              nhân lực; hoạt động hiệu quả và phát triển bền vững; là sự lựa
-              chọn của các đối tác trong và ngoài nước.
-            </p>
-          </div>
-          <div className="about-right__content">
-            <img src={service} alt="icon2" className="" />
-            <p>
-              Cung cấp cho khách hàng các sản phẩm, dịch vụ có chất lượng phù
-              hợp, giá cả cạnh tranh. Hài hòa lợi ích doanh nghiệp với lợi ích
-              xã hội, đóng góp tích cực vào các hoạt động hướng tới cộng đồng.
-            </p>
-          </div>
-          <div className="about-right__content">
-            <img src={location} alt="icon3" className="" />
-            <p>
-              Với trên 40 chi nhánh và văn phòng trải khắp cả nước, được trang
-              bị đầy đủ các thiết bị công nghệ thông tin phục vụ cho quá trình
-              giảng dạy và học tập
-            </p>
-          </div>
-          <div className="mt-6">
-            <Tooltip
-              title="Xem chi tiết danh sách địa chỉ trên cả nước của chúng tôi tại đây"
-              color="cyan"
-              placement="topLeft"
-              className="comic-button"
-            >
-              <button class="">Địa chỉ!</button>
-            </Tooltip>
-          </div>
+        <div className="">
+          <h1 className="about-right__title1">
+            CÔNG TY CỔ PHẦN CUNG ỨNG NHÂN LỰC
+          </h1>
+          <h1 className="about-right__title2">BCN QUỐC TẾ</h1>
+        </div>
+        <div className="about-right__link text-center">
+          <p>BCN HR ,.JSC</p>
+        </div>
+        <div className="about-right__content">
+          <img src={leverUP} alt="icon1" className="about-right__icon" />
+          <p className="about-right__p">
+            Sứ mệnh của BCN - HR là trở thành một trong những công ty hàng đầu
+            trong lĩnh vực hợp tác và cung cấp nguồn cung ứng nhân lực Việt cho
+            các doanh nghiệp nước ngoài. Bắt đầu với việc lựa chọn đúng người,
+            đúng công việc, chúng tôi tiến hành quản lý và đào tạo một cách kỹ
+            lưỡng để đáp ứng linh hoạt nhu cầu của các đối tác khách hàng.
+          </p>
+        </div>
+        <div className="about-right__content">
+          <img src={service} alt="icon2" className="about-right__icon" />
+          <p className="about-right__p">
+            Cung cấp cho đối tác khách hàng các sản phẩm, dịch vụ có chất lượng
+            phù hợp, giá cả cạnh tranh. Hài hòa lợi ích doanh nghiệp với lợi ích
+            xã hội, đóng góp tích cực vào các hoạt động hướng tới cộng đồng.
+          </p>
+        </div>
+        <div className="about-right__content">
+          <img src={location} alt="icon3" className="about-right__icon" />
+          <p className="about-right__p">
+            Với trên 40 chi nhánh và văn phòng trải khắp cả nước, chúng tôi tự
+            hào là một đơn vị lớn mạnh, đưa các chương trình của doanh nghiệp
+            nước ngoài tiếp cận gần hơn tới khắp nơi trên mọi miền tổ quốc.
+          </p>
+        </div>
+        <div className="address-btn">
+          <Tooltip
+            title="Xem chi tiết danh sách địa chỉ trên cả nước của chúng tôi tại đây"
+            color="cyan"
+            placement="topLeft"
+            className="comic-button"
+          >
+            <button class="">Địa chỉ!</button>
+          </Tooltip>
         </div>
       </div>
     </div>

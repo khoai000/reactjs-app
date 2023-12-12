@@ -10,7 +10,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 32px;
+    padding: 8px 28px;
   }
 
   nav {
@@ -20,14 +20,15 @@
   }
 
   .logo {
-    width: 108px;
-    height: 108px;
+    width: 120px;
+    height: 120px;
   }
 
   .glow-on-hover {
     width: max-content;
     font-size: 28px;
-    margin-left: 24px;
+    margin-left: 18px;
+    margin-right: 12px;
     background-image: linear-gradient(
       to right,
       #cb0000 25%,
@@ -69,8 +70,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 60px;
-    height: 60px;
+    width: 56px;
+    height: 56px;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -110,7 +111,7 @@
   }
   /* hover effect on button width */
   .Btn:hover {
-    width: 125px;
+    width: 160px;
     border-radius: 40px;
     transition-duration: 0.3s;
   }
@@ -136,7 +137,7 @@
 @media (min-width: 1280px) and (max-width: 1535px) {
   .header-wrap {
     width: 90%;
-    height: 60px;
+    height: 56px;
     margin: 4vh auto;
     border-radius: 28px;
     z-index: 9999;
@@ -269,9 +270,9 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
-  header-wrap {
+  .header-wrap {
     width: 90%;
-    height: 60px;
+    height: 48px;
     margin: 4vh auto;
     border-radius: 28px;
     z-index: 9999;
@@ -280,7 +281,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 24px;
+    padding: 8px 18px;
   }
 
   nav {
@@ -290,14 +291,14 @@
   }
 
   .logo {
-    width: 84px;
-    height: 84px;
+    width: 76px;
+    height: 76px;
   }
 
   .glow-on-hover {
     width: max-content;
-    font-size: 20px;
-    margin-left: 22px;
+    font-size: 16px;
+    margin-left: 16px;
     background-image: linear-gradient(
       to right,
       #cb0000 25%,
@@ -339,8 +340,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -361,7 +362,7 @@
   }
 
   .sign svg {
-    width: 17px;
+    width: 16px;
   }
 
   .sign svg path {
@@ -374,13 +375,13 @@
     width: 0%;
     opacity: 0;
     color: black;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     transition-duration: 0.3s;
   }
   /* hover effect on button width */
   .Btn:hover {
-    width: 125px;
+    width: 115px;
     border-radius: 40px;
     transition-duration: 0.3s;
   }
