@@ -39,16 +39,16 @@ const CompanyInfo = () => {
             <div className="date color-title4">THẾ MẠNH</div>
             {/* <div className="title">Title 3</div> */}
             <div className="descr">
-              BCN HR có Ban lãnh đạo và đội ngũ nhân viên kinh nghiệm, am hiểu
-              thị trường nước ngoài. Là một trong những doanh nghiệp luôn đi đầu
-              trong việc chú trọng xây dựng cơ sở vật chất khang trang, hiện đại
-              và thân thiện với môi trường. Có đội ngũ giảng viên trình độ cao,
-              cùng quy trình giảng dạy luôn được đảm bảo chất lượng và không
-              ngừng nâng cao…
+              Có Ban lãnh đạo và đội ngũ nhân viên giàu kinh nghiệm, am hiểu thị
+              trường nước ngoài. Là một trong những doanh nghiệp luôn đi đầu
+              trong việc chú trọng đào tạo nguồn nhân lực, đảm bảo cơ sở vật
+              chất phù hợp với môi trường đào tạo. Đội ngũ giảng viên trình độ
+              cao, quy trình giảng dạy luôn được đảm bảo chất lượng và không
+              ngừng nâng cao.
             </div>
           </li>
           <li>
-            <div className="date color-title5">CƠ HỘI ĐẦU TƯ</div>
+            <div className="date color-title5">Đặc trưng của BCN HR</div>
             {/* <div className="title">Title 3</div> */}
             <div className="descr">
               BCN HR luôn liên tục tuyển chọn nguồn lao động mới, đào tạo ngoại

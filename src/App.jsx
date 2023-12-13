@@ -9,6 +9,7 @@ import CompanyResult from "./commons/components/company-result/CompanyResult";
 import CustomerReview from "./commons/components/customer-review/CustomerReview";
 import Footer from "./commons/components/footer/Footer";
 import Contact from "./commons/components/contact/Contact";
+import ContactForm from "./commons/components/contact-form/ContactForm";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <CompanyResult />
       <BusinessLicense />
       <CustomerReview />
+      <ContactForm />
       {/* <Footer /> */}
       {/* <div className="fixed left-0   bottom-0 2xl:bottom-20 z-[9999]">
         <Contact />

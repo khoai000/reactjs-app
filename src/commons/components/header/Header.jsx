@@ -58,7 +58,7 @@ const Header = () => {
             </a>
           </div>
         </div>
-        <a href="#footer" className="glow-on-hover">
+        <a href="#contact" className="glow-on-hover">
           Liên hệ
         </a>
       </nav>
