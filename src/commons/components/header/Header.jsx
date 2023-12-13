@@ -13,16 +13,28 @@ const Header = () => {
         <a href="*" className="glow-on-hover">
           Trang chủ
         </a>
-        <a href="#about" className="glow-on-hover">
-          Giới thiệu
-        </a>
+        <div class="dropdown">
+          <p className="glow-on-hover" onClick={(e) => e.preventDefault()}>
+            Giới thiệu
+            <img src={down} alt="expand" className="expand inline" />
+          </p>
+          <div class="dropdown-content">
+            <a href="#about" className="text-center">
+              Tổng quan
+            </a>
+            <a href="#license" className="text-center">
+              Giấy phép HĐ
+            </a>
+          </div>
+        </div>
+
         {/* <a href="#license" className="glow-on-hover">
           Đào tạo
         </a> */}
         <a href="#order" className="glow-on-hover">
           Đơn hàng
         </a>
-        <a href="#activity" className="glow-on-hover ">
+        <a href="#" className="glow-on-hover">
           Tin tức
         </a>
         <div class="dropdown">
@@ -36,7 +48,7 @@ const Header = () => {
           </p>
           <div class="dropdown-content">
             <a href="#info" className="text-center">
-              Sứ mệnh
+              Về chúng tôi
             </a>
             <a href="#activity" className="text-center">
               Hoạt động

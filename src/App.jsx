@@ -21,7 +21,7 @@ function App() {
       <Order />
       <CompanyInfo />
       <CompanyResult />
-      {/* <BusinessLicense /> */}
+      <BusinessLicense />
       <CustomerReview />
       {/* <Footer /> */}
       {/* <div className="fixed left-0   bottom-0 2xl:bottom-20 z-[9999]">

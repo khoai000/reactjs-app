@@ -13,7 +13,7 @@ import "aos/dist/aos.css";
 const About = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
     });
   }, []);
   return (
@@ -21,10 +21,7 @@ const About = () => {
       <div className="about-left" data-aos="slide-up" data-aos-offset="200">
         <img src={university} alt="" className="university-image rounded-2xl" />
       </div>
-      <div
-        className="about-right"
-        // data-aos="fade-left" data-aos-offset="500"
-      >
+      <div className="about-right" data-aos="fade-left" data-aos-offset="200">
         <div className="">
           <h1 className="about-right__title1">
             CÔNG TY CỔ PHẦN CUNG ỨNG NHÂN LỰC

@@ -14,11 +14,9 @@ const CustomerReview = () => {
         <div className="w-full border-t border-b border-gray-200 px-5 text-gray-800">
           <div className="w-full max-w-full mx-auto">
             <div className="text-center w-full mx-auto ">
-              <h1 className="text-comp !text-2xl !-mt-6 !text-slate-900">
-                KHÁCH HÀNG NÓI GÌ VỀ
-              </h1>
+              <h1 className="review-title1">KHÁCH HÀNG NÓI GÌ VỀ</h1>
               <br />
-              <h3 className="text-comp !text-4xl mb-5 font-extrabold !text-slate-900">
+              <h3 className="review-title2">
                 CÔNG TY CỔ PHẦN CUNG ỨNG NHÂN LỰC BCN QUỐC TẾ
               </h3>
               <div className="text-center mb-10">
@@ -29,21 +27,22 @@ const CustomerReview = () => {
                 <span className="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
               </div>
             </div>
-            <div className="-mx-3 md:flex flex items-start justify-around px-44">
+            <div className="-mx-3 md:flex flex items-start justify-around review-content">
               <div className="px-3 md:w-1/3">
                 <div className="w-full mx-auto rounded-lg bg-slate-200 border border-gray-200 p-5 text-gray-800 font-light mb-6">
-                  <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-16 h-16 bg-avt bg-slate-50 border border-gray-200">
+                  <div className="w-full flex mb-4 items-center xl:gap-3">
+                    <div className="overflow-hidden rounded-full bg-avt bg-slate-50 border border-gray-200">
                       <img src={wm1} alt="" />
                     </div>
-                    <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-xl uppercase text-gray-700">
+                    <div className="h-max">
+                      <h6 className="review-content__name font-bold uppercase text-gray-700">
                         Trần Thị Nga
                       </h6>
+                      <p className="review-content__info">Phụ huynh học sinh</p>
                     </div>
                   </div>
                   <div className="w-full">
-                    <p className="text-xl leading-tight">
+                    <p className="leading-tight">
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
@@ -59,17 +58,18 @@ const CustomerReview = () => {
                 </div>
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-16 h-16 bg-avt bg-gray-50 border border-gray-200">
+                    <div className="overflow-hidden rounded-full  bg-avt  border border-gray-200">
                       <img src={wm2} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-xl uppercase text-gray-600">
+                      <h6 className="review-content__name font-bold uppercase text-gray-600">
                         Nguyễn Thị Vân Anh
                       </h6>
+                      <p className="review-content__info">Phụ huynh học sinh</p>
                     </div>
                   </div>
                   <div className="w-full">
-                    <p className="text-xl leading-tight">
+                    <p className="leading-tight">
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
@@ -87,17 +87,21 @@ const CustomerReview = () => {
               <div className="px-3 md:w-1/3">
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-16 h-16 bg-avt bg-gray-50 border border-gray-200">
+                    <div className="overflow-hidden rounded-full  bg-avt  border border-gray-200">
                       <img src={m1} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-xl uppercase text-gray-600">
+                      <h6 className="font-bold review-content__name uppercase text-gray-600">
                         Nguyễn Văn An
                       </h6>
+                      <p className="review-content__info">
+                        {" "}
+                        Du học sinh Nhật, tháng 4 năm 2022{" "}
+                      </p>
                     </div>
                   </div>
                   <div className="w-full">
-                    <p className="text-xl leading-tight">
+                    <p className="leading-tight">
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
@@ -114,17 +118,20 @@ const CustomerReview = () => {
                 </div>
                 <div className="w-full mx-auto rounded-lg bg-slate-200 border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-16 h-16 bg-avt bg-gray-50 border border-gray-200">
+                    <div className="overflow-hidden rounded-full bg-avt  border border-gray-200">
                       <img src={m2} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-xl uppercase text-gray-600">
+                      <h6 className="font-bold review-content__name uppercase text-gray-600">
                         Đinh Hoàng Hải
                       </h6>
+                      <p className="review-content__info">
+                        Kỹ sư Công nghệ thông tin
+                      </p>
                     </div>
                   </div>
                   <div className="w-full">
-                    <p className="text-xl leading-tight">
+                    <p className="leading-tight">
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
@@ -142,17 +149,18 @@ const CustomerReview = () => {
               <div className="px-3 md:w-1/3">
                 <div className="w-full mx-auto rounded-lg bg-slate-200 border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-16 h-16 bg-avt bg-gray-50 border border-gray-200">
+                    <div className="overflow-hidden rounded-full bg-avt border border-gray-200">
                       <img src={wm3} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-xl uppercase text-gray-600">
+                      <h6 className="font-bold review-content__name uppercase text-gray-600">
                         Đoàn Kiều Chi
                       </h6>
+                      <p className="review-content__info">Du học sinh Úc</p>
                     </div>
                   </div>
                   <div className="w-full">
-                    <p className="text-xl leading-tight">
+                    <p className="leading-tight">
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
@@ -168,17 +176,20 @@ const CustomerReview = () => {
                 </div>
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-16 h-16 bg-avt bg-gray-50 border border-gray-200">
+                    <div className="overflow-hidden rounded-full  bg-avt  border border-gray-200">
                       <img src={wm4} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-xl uppercase text-gray-600">
+                      <h6 className="font-bold review-content__name  uppercase text-gray-600">
                         Nguyễn Thị Thi
                       </h6>
+                      <p className="review-content__info">
+                        Du học sinh Hàn, kỳ tháng 9 năm 2023
+                      </p>
                     </div>
                   </div>
                   <div className="w-full">
-                    <p className="text-xl leading-tight">
+                    <p className="leading-tight">
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>

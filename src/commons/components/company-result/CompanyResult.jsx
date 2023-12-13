@@ -26,43 +26,40 @@ const CompanyResult = () => {
   };
   return (
     <div className="activity-wrap" id="activity">
-      <div className="mt-12">
-        <h1 className="!text-slate-900">CÁC HOẠT ĐỘNG TẠI BCN HR</h1>
+      <div className="">
+        <h1 className="activity-title">CÁC HOẠT ĐỘNG TẠI BCN HR</h1>
+      </div>
+      <div className="">
+        <h4 className="activity-sub-title">KẾT QUẢ HOẠT ĐỘNG</h4>
       </div>
       <div className="activity-achievements">
         <div class="achievement" data-aos="zoom-in">
-          <div class="icon">
-            <img src={person} alt="" />
-          </div>
+          <img src={person} alt="" className="icon" />
           <div class="info" data-aos="zoom-in">
             <h3>ỨNG VIÊN ĐĂNG KÝ</h3>
             <p>5212</p>
           </div>
         </div>
         <div class="achievement" data-aos="zoom-out">
-          <div class="icon">
-            <img src={orderList} alt="" />
-          </div>
+          <img src={orderList} alt="" className="icon" />
           <div class="info">
             <h3>ĐƠN TUYỂN</h3>
             <p>768</p>
           </div>
         </div>
         <div class="achievement" data-aos="zoom-in">
-          <div class="icon">
-            <img src={ariplane} alt="" />
-          </div>
+          <img src={ariplane} alt="" className="icon" />
           <div class="info">
             <h3>HỌC VIÊN XUẤT CẢNH</h3>
             <p>2165</p>
           </div>
         </div>
       </div>
-      <div className="mt-8">
-        <h1 className="!text-slate-900">HÌNH ẢNH VỀ CÔNG TY</h1>
+      <div className="">
+        <h4 className="activity-sub-title">HÌNH ẢNH VỀ CÔNG TY</h4>
       </div>
 
-      <div class="timeline !-mt-4 pb-20">
+      <div class="timeline">
         <div
           class="timeline__event  animated fadeInUp delay-3s timeline__event--type1"
           // id="slide1"

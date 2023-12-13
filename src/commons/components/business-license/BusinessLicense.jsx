@@ -8,31 +8,27 @@ import "aos/dist/aos.css";
 const BusinessLicense = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1500,
     });
   }, []);
 
   return (
     <div className="license-wrap" id="license">
-      <div className="mt-8">
-        <h1 className="!text-slate-900">GIẤY PHÉP KINH DOANH</h1>
-      </div>
+      <div className="license-title">GIẤY PHÉP KINH DOANH</div>
       <div className="license-content flex flex-row wrapper justify-evenly">
         <div
           className="license-left"
           data-aos="fade-right"
-          data-aos-offset="500"
-          data-aos-duration="2000"
+          data-aos-offset="200"
         >
-          <img src={gpkd1} alt="g1" />
+          <div className="license-logo"></div>
         </div>
         <div
           className="license-right"
           data-aos="fade-left"
-          data-aos-offset="500"
-          data-aos-duration="2000"
+          data-aos-offset="200"
         >
-          <img src={gpkd2} alt="g2" />
+          <div className="license-logo"></div>
         </div>
       </div>
     </div>
