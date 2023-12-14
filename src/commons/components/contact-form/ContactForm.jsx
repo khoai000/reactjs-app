@@ -1,70 +1,86 @@
 import React from "react";
 import "./contact-form.css";
-import { Alert, Form, Input } from "antd";
+import { Form, Input } from "antd";
+import gmail from "../../assets/gmail.png";
+import phone from "../../assets/phone-reng.png";
+import mess from "../../assets/messenger.png";
+
+const { TextArea } = Input;
 
 const ContactForm = () => {
   const [form] = Form.useForm();
   return (
     <div className="contact-form" id="contact">
       <div className="contact-title">LIÊN HỆ TƯ VẤN</div>
-      <Form
-        name="trigger"
-        style={{
-          maxWidth: 600,
-        }}
-        form={form}
-        layout="vertical"
-        autoComplete="off"
-      >
-        {/* <Alert message="Use 'max' rule, continue type chars to see it" /> */}
+      <div className="content-group">
+        <div className="content-group__left">
+          <div className="link-box">
+            <img src={gmail} alt="" className="link-box__icon" />
+            <p className="link-box__text">Gửi mail</p>
+          </div>
+          <div className="link-box">
+            <img src={phone} alt="" className="link-box__icon" />
+            <p className="link-box__text">Gọ điện</p>
+          </div>
+          <div className="link-box">
+            <img src={mess} alt="" className="link-box__icon" />
+            <p className="link-box__text">Nhắn tin</p>
+          </div>
+        </div>
+        <div className="content-group__right">
+          <Form
+            name="trigger"
+            style={{
+              maxWidth: 1200,
+            }}
+            form={form}
+            layout="vertical"
+            autoComplete="off"
+          >
+            {/* <Alert message="Use 'max' rule, continue type chars to see it" /> */}
 
-        <Form.Item
-          hasFeedback
-          label="Họ & Tên"
-          name="name"
-          validateTrigger="onBlur"
-          rules={[
-            {
-              required: true,
-              message: "Vui lòng điền đầy đủ thông tin",
-            },
-          ]}
-        >
-          <Input placeholder="" />
-        </Form.Item>
-
-        <Form.Item
-          hasFeedback
-          label="Field B"
-          name="field_b"
-          validateDebounce={1000}
-          rules={[
-            {
-              max: 3,
-            },
-          ]}
-        >
-          <Input placeholder="Validate required debounce after 1s" />
-        </Form.Item>
-
-        <Form.Item
-          hasFeedback
-          label="Field C"
-          name="field_c"
-          validateFirst
-          rules={[
-            {
-              max: 6,
-            },
-            {
-              max: 3,
-              message: "Continue input to exceed 6 chars",
-            },
-          ]}
-        >
-          <Input placeholder="Validate one by one" />
-        </Form.Item>
-      </Form>
+            <Form.Item
+              hasFeedback
+              label="Họ & Tên"
+              name="name"
+              validateTrigger="onBlur"
+              rules={[
+                {
+                  required: true,
+                  message: "",
+                },
+              ]}
+              className="input-style"
+            >
+              <Input placeholder="Bắt buộc" />
+            </Form.Item>
+            <Form.Item
+              hasFeedback
+              label="SĐT/ Email"
+              name="contact"
+              validateTrigger="onBlur"
+              rules={[
+                {
+                  required: true,
+                  message: "",
+                },
+              ]}
+              className="input-style"
+            >
+              <Input placeholder="Bắt buộc" />
+            </Form.Item>
+            <Form.Item
+              hasFeedback
+              label="Nội dung"
+              name="content"
+              validateTrigger="onBlur"
+              className="input-style"
+            >
+              <TextArea rows={3} />
+            </Form.Item>
+          </Form>
+        </div>
+      </div>
     </div>
   );
 };
