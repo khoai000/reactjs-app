@@ -14,18 +14,24 @@ const ContactForm = () => {
       <div className="contact-title">LIÊN HỆ TƯ VẤN</div>
       <div className="content-group">
         <div className="content-group__left">
-          <div className="link-box">
-            <img src={gmail} alt="" className="link-box__icon" />
-            <p className="link-box__text">Gửi mail</p>
-          </div>
-          <div className="link-box">
-            <img src={phone} alt="" className="link-box__icon" />
-            <p className="link-box__text">Gọ điện</p>
-          </div>
-          <div className="link-box">
-            <img src={mess} alt="" className="link-box__icon" />
-            <p className="link-box__text">Nhắn tin</p>
-          </div>
+          <a href="mailto:bcnhr.vn@gmail.com">
+            <div className="link-box">
+              <img src={gmail} alt="" className="link-box__icon" />
+              <p className="link-box__text">Gửi mail</p>
+            </div>
+          </a>
+          <a href="tel:0976265599">
+            <div className="link-box">
+              <img src={phone} alt="" className="link-box__icon" />
+              <p className="link-box__text">Gọi điện</p>
+            </div>
+          </a>
+          <a href="tel:0976265599">
+            <div className="link-box">
+              <img src={mess} alt="" className="link-box__icon" />
+              <p className="link-box__text">Nhắn tin</p>
+            </div>
+          </a>
         </div>
         <div className="content-group__right">
           <Form
@@ -37,11 +43,9 @@ const ContactForm = () => {
             layout="vertical"
             autoComplete="off"
           >
-            {/* <Alert message="Use 'max' rule, continue type chars to see it" /> */}
-
             <Form.Item
               hasFeedback
-              label="Họ & Tên"
+              label={<p className="label-item">Họ & Tên</p>}
               name="name"
               validateTrigger="onBlur"
               rules={[
@@ -52,11 +56,11 @@ const ContactForm = () => {
               ]}
               className="input-style"
             >
-              <Input placeholder="Bắt buộc" />
+              <Input placeholder="Bắt buộc" className="input-item" />
             </Form.Item>
             <Form.Item
               hasFeedback
-              label="SĐT/ Email"
+              label={<p className="label-item">SĐT/ Email</p>}
               name="contact"
               validateTrigger="onBlur"
               rules={[
@@ -67,16 +71,16 @@ const ContactForm = () => {
               ]}
               className="input-style"
             >
-              <Input placeholder="Bắt buộc" />
+              <Input placeholder="Bắt buộc" className="input-item" />
             </Form.Item>
             <Form.Item
               hasFeedback
-              label="Nội dung"
+              label={<p className="label-item">Nội dung</p>}
               name="content"
               validateTrigger="onBlur"
               className="input-style"
             >
-              <TextArea rows={3} />
+              <TextArea rows={3} className="input-item" />
             </Form.Item>
           </Form>
         </div>

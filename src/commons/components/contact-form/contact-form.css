@@ -4,8 +4,8 @@
 @media (min-width: 1280px) and (max-width: 1535px) {
   .contact-form {
     width: 90%;
-    margin: 0 auto;
-    height: 100vh;
+    margin: 100px auto 120px;
+    height: max-content;
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -14,10 +14,11 @@
 
   .contact-title {
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 24px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
     color: #333;
+    margin-bottom: 12px;
   }
 
   .content-group {
@@ -25,6 +26,8 @@
     height: max-content;
     display: flex;
     justify-content: center;
+    column-gap: 72px;
+    margin-top: 24px;
   }
 
   .content-group__left {
@@ -36,17 +39,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: max-content;
   }
 
   /* CSS lòe loẹt cho link btn */
   .link-box {
     position: relative;
-    width: 200px;
+    width: max-content;
     height: max-content;
     color: #fff;
     transition: 0.5s;
     cursor: pointer;
-    margin-top: 32px;
+    margin-bottom: 24px;
+    background: rgb(107, 255, 77);
+    background: radial-gradient(
+      circle,
+      rgba(107, 255, 77, 1) 0%,
+      rgba(0, 147, 143, 1) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 24px;
+    padding: 12px 32px 8px;
   }
 
   .link-box:hover {
@@ -60,7 +76,6 @@
     position: absolute;
     top: 0;
     left: 0;
-
     border-radius: 1.2em;
   }
 
@@ -75,38 +90,24 @@
     filter: blur(30px);
   }
 
-  .link-box span {
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    right: 6px;
-    bottom: 6px;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 2;
-    border-radius: 1em;
+  .link-box__icon {
+    width: 36px;
+    height: 36px;
   }
 
-  .link-box span::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
+  .link-box__text {
+    font-size: 18px;
+    margin-top: 6px;
+    color: #333;
+    font-weight: 600;
   }
 
-  .link-box .content {
-    position: relative;
-    padding: 10px;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 1.5em;
+  .label-item {
+    font-size: 18px;
+  }
+
+  .input-item {
+    width: 320px;
   }
 }
 
