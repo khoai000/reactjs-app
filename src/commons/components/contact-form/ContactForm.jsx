@@ -1,14 +1,70 @@
-import React from "react";
+import React, { useCallback } from "react";
 import "./contact-form.css";
-import { Form, Input } from "antd";
+import { Form, Input, message } from "antd";
 import gmail from "../../assets/gmail.png";
 import phone from "../../assets/phone-reng.png";
 import mess from "../../assets/messenger.png";
+import emailjs from "emailjs-com";
 
 const { TextArea } = Input;
 
 const ContactForm = () => {
   const [form] = Form.useForm();
+  const [messageApi, contextHolder] = message.useMessage();
+
+  const success = useCallback(() => {
+    messageApi.open({
+      type: "success",
+      content: "Thành công",
+      className: "custom-class",
+      style: {
+        marginTop: "20vh",
+      },
+    });
+  }, [messageApi]);
+  const loading = useCallback(() => {
+    messageApi.open({
+      type: "loading",
+      content: "Đang thực hiện",
+      className: "custom-class",
+      style: {
+        marginTop: "20vh",
+      },
+    });
+  }, [messageApi]);
+  const warning = useCallback(() => {
+    messageApi.open({
+      type: "warning",
+      content: "Vui lòng điền dữ liệu",
+      className: "custom-class",
+      style: {
+        marginTop: "20vh",
+      },
+    });
+  }, [messageApi]);
+  const onFinish = useCallback(async () => {
+    try {
+      const values = await form.validateFields();
+      console.log(values);
+      loading();
+      const result = await emailjs.send(
+        "service_xcauajq",
+        "template_gyir19j",
+        values,
+        "GHADjin2iHQ-vi5Jy"
+      );
+      message.destroy();
+      if (result) {
+        success();
+        form.resetFields();
+      } else {
+        message.error("Failed!");
+      }
+    } catch (error) {
+      warning();
+      console.log(error);
+    }
+  }, [form, loading, success, warning]);
   return (
     <div className="contact-form" id="contact">
       <div className="contact-title">LIÊN HỆ TƯ VẤN</div>
@@ -82,6 +138,12 @@ const ContactForm = () => {
             >
               <TextArea rows={3} className="input-item" />
             </Form.Item>
+            {contextHolder}
+            <div onClick={onFinish}>
+              <button class="btn">
+                <i class="animation"></i>Gửi<i class="animation"></i>
+              </button>
+            </div>
           </Form>
         </div>
       </div>

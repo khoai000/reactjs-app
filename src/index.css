@@ -23,7 +23,7 @@ body {
   background-position: center center;
   background-attachment: fixed;
   scroll-behavior: smooth;
-  /* background-color: rgba(255, 191, 255, 0.7); */
+  overflow-x: hidden;
 }
 
 html {

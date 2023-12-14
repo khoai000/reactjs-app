@@ -58,15 +58,15 @@
 
 @media (min-width: 1280px) and (max-width: 1535px) {
   .background_cover {
-    /* background-image: url("/src/commons/images/cty.jpg"); */
-    background-size: cover; /* Đảm bảo hình ảnh sẽ che phủ toàn bộ background */
-    background-position: center; /* Chính giữa hình ảnh */
-    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
-    height: 100vh; /* Đặt chiều cao bằng chiều cao của viewport */
+    background-image: url("/src/commons/images/cty.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
     display: flex;
-    width: 100%;
+    /* width: fit-content; */
     justify-content: center;
-    /* align-items: center; */
     text-align: center;
   }
 
