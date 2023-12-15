@@ -17,7 +17,7 @@ function App() {
       <div className="fixed w-full top-0 left-0 z-[9999]">
         <Header />
       </div>
-      <Banner />
+      {/* <Banner />
       <About />
       <Order />
       <CompanyInfo />
@@ -25,10 +25,8 @@ function App() {
       <BusinessLicense />
       <CustomerReview />
       <ContactForm />
-      <Footer />
-      {/* <div className="fixed left-0   bottom-0 2xl:bottom-20 z-[9999]">
-        <Contact />
-      </div> */}
+      <Footer /> */}
+      <Contact />
     </>
   );
 }
