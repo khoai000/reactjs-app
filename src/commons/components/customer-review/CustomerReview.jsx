@@ -48,8 +48,9 @@ const CustomerReview = () => {
                       </span>
                       Trung tâm du học này là lựa chọn xuất sắc! Hỗ trợ tận tâm
                       từ đội ngũ tư vấn, giúp tôi tự tin hơn về quyết định du
-                      học. Giáo viên chất lượng, và môi trường học quốc tế làm
-                      cho trải nghiệm học tập của tôi trở nên đặc biệt.
+                      học của con. Giáo viên chất lượng, và môi trường học quốc
+                      tế làm cho trải nghiệm học tập của con tôi trở nên đặc
+                      biệt.
                       <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                         "
                       </span>
@@ -73,10 +74,10 @@ const CustomerReview = () => {
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
-                      Trung tâm xuất khẩu lao động này đã giúp tôi có cơ hội làm
-                      việc ở nước ngoài một cách thuận lợi. Quy trình tư vấn và
-                      thủ tục được thực hiện chuyên nghiệp, giúp tôi tự tin hơn
-                      khi bắt đầu công việc mới ở đất khách.
+                      Trung tâm xuất khẩu lao động này đã giúp em tôi có cơ hội
+                      làm việc ở nước ngoài một cách thuận lợi. Quy trình tư vấn
+                      và thủ tục được thực hiện chuyên nghiệp, giúp em tôi tự
+                      tin hơn khi bắt đầu công việc mới ở đất khách.
                       <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                         "
                       </span>
@@ -105,11 +106,10 @@ const CustomerReview = () => {
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
-                      Dịch vụ của trung tâm xuất khẩu lao động và du học sinh
-                      rất đáng tin cậy. Tôi đã được hỗ trợ mọi thứ từ việc chuẩn
-                      bị hồ sơ đến khi tìm kiếm chỗ ở tại quốc gia mới. Điều này
-                      thực sự giảm bớt gánh nặng khi bắt đầu cuộc hành trình
-                      mới.
+                      Dịch vụ của trung tâm du học sinh rất đáng tin cậy. Tôi đã
+                      được hỗ trợ mọi thứ từ việc chuẩn bị hồ sơ đến khi tìm
+                      kiếm chỗ ở tại quốc gia mới. Điều này thực sự giảm bớt
+                      gánh nặng khi bắt đầu cuộc hành trình mới.
                       <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                         "
                       </span>
@@ -135,10 +135,10 @@ const CustomerReview = () => {
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
-                      Tôi đã có trải nghiệm du học tuyệt vời nhờ vào sự hỗ trợ
-                      chuyên nghiệp của trung tâm. Họ không chỉ giúp tôi đăng ký
-                      các khóa học mà còn hỗ trợ về visa và tìm kiếm chỗ ở. Mọi
-                      thứ đều được tổ chức rất tốt.
+                      Tôi đã có trải nghiệm tìm kiếm công việc tuyệt vời nhờ vào
+                      sự hỗ trợ chuyên nghiệp của trung tâm. Họ không chỉ giúp
+                      tôi đăng ký các khóa học đào tạo nhanh mà còn hỗ trợ về
+                      visa và tìm kiếm chỗ ở. Mọi thứ đều được tổ chức rất tốt.
                       <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                         "
                       </span>
@@ -165,9 +165,9 @@ const CustomerReview = () => {
                         "
                       </span>
                       Trung tâm này cung cấp các thông tin chi tiết và rõ ràng
-                      về các chương trình xuất khẩu lao động và du học. Sự minh
-                      bạch giúp tôi hiểu rõ về những gì đang chờ đợi và chuẩn bị
-                      tốt cho những thách thức.
+                      về các chương trình du học tại Úc. Sự minh bạch giúp tôi
+                      hiểu rõ về những gì đang chờ đợi và chuẩn bị tốt cho những
+                      thách thức và quá trình học tập sau này.
                       <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                         "
                       </span>

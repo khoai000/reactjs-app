@@ -3,6 +3,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .new_footer_top {
@@ -170,4 +171,14 @@
   height: 40px;
   width: 40px;
   margin-top: 8px;
+}
+
+.text1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #545454;
+}
+.text2 {
+  font-size: 15px;
+  color: #545454;
 }

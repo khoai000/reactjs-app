@@ -130,7 +130,10 @@ const Order = () => {
   return (
     <div className="order-wrap" id="order">
       <div className="show-wrap">
-        <div className="show-all1"></div>
+        <div className="show-all2 opacity-0" aria-disabled>
+          <p>Xem tất cả</p>
+          <img src={showAll} alt="show-all" className="show-icon" />
+        </div>
         <h1 className="uppercase order-title">Đơn hàng nổi bật</h1>
         <div className="show-all2">
           <p>Xem tất cả</p>

@@ -70,7 +70,7 @@ const ContactForm = () => {
       <div className="contact-title">LIÊN HỆ TƯ VẤN</div>
       <div className="content-group">
         <div className="content-group__left">
-          <a href="mailto:bcnhr.vn@gmail.com">
+          <a onClick={() => window.open("mailto:bcnhr.vn@gmail.com")}>
             <div className="link-box">
               <img src={gmail} alt="" className="link-box__icon" />
               <p className="link-box__text">Gửi mail</p>

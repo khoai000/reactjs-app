@@ -55,10 +55,22 @@ const Footer = () => {
               <h1 className="content-child__title">MẠNG XÃ HỘI</h1>
               <ul className="style-ul-mxh">
                 <li>
-                  <img src={fb} alt="" className="li-mxh" />
+                  <a
+                    href="https://www.facebook.com/duhocjtrain68"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={fb} alt="" className="li-mxh" />
+                  </a>
                 </li>
                 <li>
-                  <img src={tt} alt="" className="li-mxh" />
+                  <a
+                    href="http://www.tiktok.com/@duhoc.jtrain"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={tt} alt="" className="li-mxh" />
+                  </a>
                 </li>
               </ul>
             </div>
@@ -66,6 +78,18 @@ const Footer = () => {
           <div className="footer_bg">
             <div className="footer_bg_one"></div>
             <div className="footer_bg_two"></div>
+          </div>
+        </div>
+        <div className="flex flex-col justify-center items-center mb-5">
+          <div className="text1">
+            Copyright © 2023 CÔNG TY CỔ PHẦN CUNG ỨNG NHÂN LỰC BCN QUỐC TẾ
+          </div>
+          <div className="text2">
+            Địa chỉ: BT9 - Lô NO12, Khu Đô Thị Mới Dịch Vọng - Phường Dịch Vọng
+            - Quận Cầu Giấy - Hà Nội.
+          </div>
+          <div className="text2">
+            Điện thoại: 024 3791 8534 - 097 626 5599, Email: bcnhr.vn@gmail.com
           </div>
         </div>
       </footer>

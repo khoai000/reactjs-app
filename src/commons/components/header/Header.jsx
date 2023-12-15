@@ -7,10 +7,15 @@ const Header = () => {
   return (
     <div className="header-wrap">
       <nav className="">
-        <a href="*" className="logo">
-          <img src={logo} className="logo" />
+        <a href="/">
+          <img
+            src={logo}
+            className="logo"
+            alt="logo"
+            // onClick={() => window.location.reload()}
+          />
         </a>
-        <a href="*" className="glow-on-hover">
+        <a href="/" className="glow-on-hover">
           Trang chủ
         </a>
         <div class="dropdown">

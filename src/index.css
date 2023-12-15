@@ -44,7 +44,7 @@ html {
 
 @media (min-width: 1024px) and (max-width: 1279px) {
   html {
-    scroll-padding-top: 6.6rem;
+    scroll-padding-top: 5.6rem;
   }
 }
 
