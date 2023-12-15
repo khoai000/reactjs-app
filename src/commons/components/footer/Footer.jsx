@@ -80,7 +80,7 @@ const Footer = () => {
             <div className="footer_bg_two"></div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center mb-5">
+        <div className="flex flex-col justify-center items-center mb-3">
           <div className="text1">
             Copyright © 2023 CÔNG TY CỔ PHẦN CUNG ỨNG NHÂN LỰC BCN QUỐC TẾ
           </div>
