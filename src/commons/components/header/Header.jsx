@@ -2,9 +2,37 @@ import React from "react";
 import "./header.css";
 import logo from "../../assets/Logo_BCN.png";
 import down from "../../assets/down.png";
+import { useMediaQuery } from "react-responsive";
 
 const Header = () => {
-  return (
+  const isMobile = useMediaQuery({ maxWidth: 575.98 });
+  return isMobile ? (
+    <div class="mobile-wrapper">
+      <div class="mobile-container">
+        <div class="content">
+          <nav>
+            <input type="checkbox" id="hamburger1" />
+            <label for="hamburger1"></label>
+
+            <ul class="nav-links">
+              <li>
+                <a href="#">about us</a>
+              </li>
+              <li>
+                <a href="#">products</a>
+              </li>
+              <li>
+                <a href="#">media</a>
+              </li>
+              <li>
+                <a href="#">contact us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  ) : (
     <div className="header-wrap">
       <nav className="">
         <a href="/">
