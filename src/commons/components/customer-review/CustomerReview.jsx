@@ -28,7 +28,7 @@ const CustomerReview = () => {
               </div>
             </div>
             <div className="-mx-3 md:flex flex items-start justify-around review-content">
-              <div className="px-3 md:w-1/3">
+              <div className="px-3 md:w-1/3 2xl:px-6">
                 <div className="w-full mx-auto rounded-lg bg-slate-200 border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center xl:gap-3">
                     <div className="overflow-hidden rounded-full bg-avt bg-slate-50 border border-gray-200">
@@ -85,7 +85,7 @@ const CustomerReview = () => {
                   </div>
                 </div>
               </div>
-              <div className="px-3 md:w-1/3">
+              <div className="px-3 md:w-1/3 2xl:px-6">
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full  bg-avt  border border-gray-200">
@@ -146,7 +146,7 @@ const CustomerReview = () => {
                   </div>
                 </div>
               </div>
-              <div className="px-3 md:w-1/3">
+              <div className="px-3 md:w-1/3 2xl:px-6">
                 <div className="w-full mx-auto rounded-lg bg-slate-200 border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full bg-avt border border-gray-200">

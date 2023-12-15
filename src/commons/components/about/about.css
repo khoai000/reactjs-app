@@ -2,45 +2,45 @@
   .about-wrap {
     height: max-content;
     width: 90%;
-    margin: 200px auto 120px;
+    margin: 160px auto 120px;
     background: rgba(231, 228, 223, 0.5);
     border-radius: 12px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 18px 0;
+    padding: 48px 0;
   }
   .about-left {
-    flex: 35%;
+    flex: 40%;
     display: flex;
     justify-content: center;
   }
 
   .university-image {
-    width: 370px;
-    height: 470px;
+    width: 480px;
+    height: 650px;
   }
 
   .about-right {
-    flex: 65%;
+    flex: 60%;
     height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: rgb(28, 28, 28);
-    padding-right: 32px;
+    padding-right: 60px;
     padding-left: 18px;
   }
 
   .about-right__title1 {
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 600;
   }
 
   .about-right__title2 {
-    font-size: 28px;
+    font-size: 34px;
     font-weight: 700;
     margin-top: -2px;
     text-align: center;
@@ -51,10 +51,10 @@
     cursor: pointer;
     margin: auto;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     transition: font-weight 250ms ease-in-out;
     font-style: italic;
-    margin-bottom: 4px;
+    margin-bottom: 12px;
   }
 
   .about-right__link p:hover {
@@ -63,7 +63,7 @@
   }
 
   .about-right__icon {
-    width: 42px;
+    width: 60px;
     margin-right: 10px;
     margin-left: 12px;
   }
@@ -75,18 +75,16 @@
   }
 
   .about-right__p {
-    font-weight: 500;
+    font-weight: 300;
     margin-left: 6px;
-    font-size: 1em;
-    line-height: 150%;
     /* text-align: center; */
     letter-spacing: 1px;
     text-indent: 32px;
-    color: black;
-    font-size: 18px;
-    line-height: 24px;
+    color: #181818;
+    font-size: 22px;
+    line-height: 36px;
     margin-top: 2px;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
 
   .comic-button {
@@ -102,7 +100,7 @@
     border-radius: 10px;
     box-shadow: 5px 5px 0px #000;
     transition: all 0.3s ease;
-    margin-top: 12px;
+    margin-top: 8px;
   }
 
   .comic-button:hover {

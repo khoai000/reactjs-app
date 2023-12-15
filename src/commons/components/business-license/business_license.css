@@ -1,4 +1,82 @@
 @media (min-width: 1536px) {
+  .license-wrap {
+    width: 90%;
+    margin: 140px auto 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .license-title {
+    text-transform: uppercase;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 700;
+    color: #252525;
+  }
+
+  .license-content {
+    width: max-content;
+    --b: 0.5em; /* border width */
+    --c: 3em; /* corner size */
+    --r: 2em; /* corner rounding */
+    position: relative;
+    margin-top: 12px;
+    border: solid var(--b) transparent;
+    padding: 32px 40px;
+  }
+
+  .license-content::before {
+    position: absolute;
+    z-index: -1;
+    inset: calc(-1 * var(--b));
+    border: inherit;
+    border-radius: var(--r);
+    background: linear-gradient(orange, deeppink, purple) border-box;
+    --corner: conic-gradient(from -90deg at var(--c) var(--c), red 25%, #0000 0)
+      0 0 / calc(100% - var(--c)) calc(100% - var(--c)) border-box;
+    --inner: conic-gradient(red 0 0) padding-box;
+    -webkit-mask: var(--corner), var(--inner);
+    -webkit-mask-composite: source-out;
+    mask: var(--corner) subtract, var(--inner);
+    content: "";
+  }
+
+  .license-logo {
+    background-image: url("/src/commons/assets/Logo_BCN.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 400px;
+    height: 400px;
+    opacity: 0.225;
+  }
+
+  .license-left {
+    background-image: url("/src/commons/images/gpkd1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 640px;
+    height: 900px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .license-right {
+    background-image: url("/src/commons/images/gpkd2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 640px;
+    height: 900px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1280px) and (max-width: 1535px) {

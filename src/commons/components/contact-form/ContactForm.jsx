@@ -70,12 +70,13 @@ const ContactForm = () => {
       <div className="contact-title">LIÊN HỆ TƯ VẤN</div>
       <div className="content-group">
         <div className="content-group__left">
-          <a onClick={() => window.open("mailto:bcnhr.vn@gmail.com")}>
-            <div className="link-box">
-              <img src={gmail} alt="" className="link-box__icon" />
-              <p className="link-box__text">Gửi mail</p>
-            </div>
-          </a>
+          <div
+            className="link-box"
+            onClick={() => window.open("mailto:bcnhr.vn@gmail.com")}
+          >
+            <img src={gmail} alt="" className="link-box__icon" />
+            <p className="link-box__text">Gửi mail</p>
+          </div>
           <a href="tel:0976265599">
             <div className="link-box">
               <img src={phone} alt="" className="link-box__icon" />

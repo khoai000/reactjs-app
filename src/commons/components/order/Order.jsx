@@ -106,21 +106,20 @@ const SamplePrevArrow = (props) => {
 };
 
 const Order = () => {
-  const isMobile = useMediaQuery({ maxWidth: 599 });
-  const isTabletLap = useMediaQuery({ minWidth: 600, maxWidth: 1366 });
-  const isDesktopLarge = useMediaQuery({ minWidth: 1367 });
+  const isMobile = useMediaQuery({ maxWidth: 600 });
+  const isTabletLap = useMediaQuery({ minWidth: 1024, maxWidth: 1535 });
+  const isDesktopLarge = useMediaQuery({ minWidth: 1536 });
 
   var settings = {
     dots: true,
     infinite: true,
     slidesToShow: isTabletLap ? 2 : isMobile ? 1 : 3,
     slidesToScroll: 1,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 800,
+    // autoplay: true,
+    // speed: 2000,
+    // autoplaySpeed: 800,
     initialSlide: 0,
     centerMode: true,
-    // centerPadding: "80px",
     className: "center",
     pauseOnHover: true,
     nextArrow: <SampleNextArrow />,
