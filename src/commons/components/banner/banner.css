@@ -1,57 +1,18 @@
 @media (min-width: 1536px) {
+  .banner-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    flex-direction: column;
+  }
   .background_cover {
     background-image: url("/src/commons/images/cty.jpg");
     background-size: cover; /* Đảm bảo hình ảnh sẽ che phủ toàn bộ background */
     background-position: center; /* Chính giữa hình ảnh */
     background-repeat: no-repeat; /* Không lặp lại hình ảnh */
-    height: 100vh; /* Đặt chiều cao bằng chiều cao của viewport */
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .bg-content {
-    height: max-content;
-    background: rgba(231, 228, 223, 0.675);
-    padding: 40px 60px;
-    border: 1px solid #a00000;
-    border-radius: 12px;
-    margin-top: 150px;
-    box-shadow: 5px 5px 5px #888888, 10px 10px 10px #555555;
-  }
-
-  .line-text1,
-  .line-text2,
-  .line-text3,
-  .line-text4 {
-    color: rgb(28, 28, 28);
-  }
-
-  .line-text1 {
-    font-style: italic;
-    font-size: 23px;
-  }
-
-  .line-text2 {
-    margin-top: 4px;
-    font-size: 32px;
-    font-weight: 600;
-  }
-
-  .line-text3 {
-    font-size: 46px;
-    font-weight: 700;
-    margin-top: -4px;
-  }
-  .line-text4 {
-    margin-top: 12px;
-    font-size: 26px;
-    font-weight: 600;
-  }
-  .line-text5 {
-    font-size: 24px;
-    letter-spacing: 3px;
+    /* Đặt chiều cao bằng chiều cao của viewport */
   }
 }
 

@@ -16,7 +16,7 @@
 }
 
 body {
-  background-image: url("/src/commons/images/BNCHR/IMG_6775.JPG");
+  /* background-image: url("/src/commons/images/BNCHR/IMG_6775.JPG"); */
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
