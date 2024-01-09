@@ -10,16 +10,34 @@
   border: 1px solid tomato;
   padding: 6px 12px;
   border-radius: 8px;
-  margin-right: 12px;
+  margin: 0 12px;
+  height: 40px;
+  width: 200px;
+  font-size: 18px;
+}
+
+input:hover,
+input:active,
+input:focus {
+  border: 1px solid rgb(90, 67, 159);
+  outline: none; /* Loại bỏ đường viền nền khi focus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 
 .todo-add {
   background-color: darkkhaki;
   border-radius: 8px;
-  padding: 7px 16px;
-  font-size: 16px;
+  padding: 7px 18px;
+  font-size: 18px;
   letter-spacing: 1px;
+  height: 40px;
 }
 .todo-add:hover {
   background-color: rgb(124, 150, 206);
+  color: antiquewhite;
+}
+
+.todo-li {
+  font-size: 16px;
+  padding: 8px 32px;
 }
