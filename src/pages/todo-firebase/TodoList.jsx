@@ -17,6 +17,7 @@ import { getDatabase } from "firebase/database";
 const TodoList = () => {
   const [data, setData] = useState([]);
   const database = getDatabase();
+  const [input, setInput] = useState("");
 
   const fetchData = useCallback(async () => {
     try {
@@ -40,12 +41,13 @@ const TodoList = () => {
   const addData = useCallback(async () => {
     const randomNumber = Math.floor(Math.random() * 10) + 1;
     await addDoc(collection(db, "todo-list"), {
-      title: `todo ${randomNumber}`,
+      title: input,
       description: `cv ${randomNumber}`,
       quantity: randomNumber,
     });
+    setInput("");
     fetchData();
-  }, [fetchData]);
+  }, [fetchData, input]);
 
   const updateData = useCallback(async () => {
     const itemIDs = [];
@@ -72,7 +74,8 @@ const TodoList = () => {
   const deleteData = useCallback(async () => {
     const itemIDs = [];
     const q = query(collection(db, "todo-list"), where("quantity", "<", 5));
-    const querySnapshot = await getDocs(q);
+    // const querySnapshot = await getDocs(q);
+    const querySnapshot = await getDocs(collection(db, "todo-list"));
     querySnapshot.forEach((doc) => {
       itemIDs.push(doc.id);
     });
@@ -92,7 +95,12 @@ const TodoList = () => {
         <button className="todo-add" onClick={updateData}>
           Update
         </button>
-        <input type="text" className="todo-input" />
+        <input
+          type="text"
+          className="todo-input"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+        />
         <button className="todo-add" onClick={addData}>
           Thêm
         </button>
