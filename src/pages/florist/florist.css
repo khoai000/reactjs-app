@@ -237,7 +237,7 @@ input[type="radio"]:checked + label.btn::after {
   width: 115vh;
   height: 80vh;
   border-radius: 20px;
-  border: 1px solid brown;
+  /* border: 1px solid brown; */
   padding-left: 180px;
   padding-right: 30px;
 }
@@ -295,6 +295,123 @@ input[type="radio"]:checked + label.btn::after {
 
 .full-rounded {
   border-radius: 6px;
+}
+
+.contact {
+  padding: 30px 200px;
+  color: #332e29;
+}
+
+.contact h1 {
+  font-size: 54px;
+  margin-top: 18px;
+  text-transform: uppercase;
+}
+
+.contact h5 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.contact h2 {
+  font-size: 26px;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.contact h6 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: -8px;
+}
+
+.neonText {
+  animation: flicker 1.5s infinite alternate;
+  color: #8c2222;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #e77d7d, 0 0 11px #e77d7d, 0 0 19px #e77d7d,
+      0 0 40px rgb(62, 184, 88), 0 0 80px rgb(62, 184, 88),
+      0 0 90px rgb(62, 184, 88), 0 0 100px #0fa, 0 0 150px #0fa;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+.contact-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-icon img:hover {
+  transform: scale(1.5);
+}
+
+.license {
+  font-size: 16px;
+  padding: 6px 0;
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.icon-link {
+  animation: wobble 1s ease infinite;
+}
+
+@keyframes wobble {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    -webkit-transform: translateX(-32px) rotate(-10deg);
+    transform: translateX(-32px) rotate(-10deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(calc(32px / 2)) rotate(10deg);
+    transform: translateX(calc(32px / 2)) rotate(10deg);
+  }
+
+  45% {
+    -webkit-transform: translateX(calc(-32px / 2)) rotate(calc(-10deg / 1.8));
+    transform: translateX(calc(-32px / 2)) rotate(calc(-10deg / 1.8));
+  }
+
+  60% {
+    -webkit-transform: translateX(calc(32px / 3.3)) rotate(calc(10deg / 3));
+    transform: translateX(calc(32px / 3.3)) rotate(calc(10deg / 3));
+  }
+
+  75% {
+    -webkit-transform: translateX(calc(-32px / 5.5)) rotate(calc(-10deg / 5));
+    transform: translateX(calc(-32px / 5.5)) rotate(calc(-10deg / 5));
+  }
 }
 
 /*=====================================================================================

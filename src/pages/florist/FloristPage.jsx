@@ -1,15 +1,24 @@
-import React from "react";
-import menuIcon from "./assets/menu.png";
+import React, { useEffect } from "react";
 import "./florist.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+// import icon
+import menuIcon from "./assets/icon/menu.png";
+import fbIcon from "./assets/icon/facebook.png";
+import zaloIcon from "./assets/icon/zalo-icon.png";
+import phoneIcon from "./assets/icon/telephone-call.png";
+
 // import required modules
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
+
+// import image
 import hoa1 from "./assets/2024_01_10_14_33_IMG_3344.JPG";
 import hoa2 from "./assets/2024_01_10_14_38_IMG_3345.JPG";
 import hoa3 from "./assets/2024_01_10_14_39_IMG_3346.JPG";
@@ -21,6 +30,12 @@ import hoa8 from "./assets/2024_01_10_14_43_IMG_3355.JPG";
 import hoa9 from "./assets/2024_01_10_14_48_IMG_3358.JPG";
 
 const FloristPage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+    });
+  }, []);
+
   return (
     <div>
       <div className="header fixed top-0 left-0 w-full z-[9999]">
@@ -133,6 +148,40 @@ const FloristPage = () => {
           </div>
         </div>
       </div> */}
+
+      <div className="contact h-[100vh] bg-[#f4dfc5] flex flex-col items-center">
+        <h1 data-aos="zoom-in">Về chúng tôi</h1>
+        <h5 data-aos="zoom-in-up">
+          Chào mừng đến với dịch vụ của chúng tôi, nơi nghệ thuật và sáng tạo
+          hội tụ, tạo ra những bức tranh hoa tươi mới và lãng mạn. Với đội ngũ
+          chuyên nghiệp, chúng tôi cam kết mang đến thiết kế hoa độc đáo, phản
+          ánh sự quan tâm và ý nghĩa. Không chỉ cung cấp dịch vụ theo dịp, chúng
+          tôi tư vấn và đáp ứng theo phong cách riêng của bạn, biến những khung
+          cảnh quen thuộc thành trải nghiệm đầy hương thơm và màu sắc tuyệt vời.
+        </h5>
+        <h2>Thời gian</h2>
+        <h6>
+          Nhận tư vấn: <strong className="font-bold neonText">24/7</strong> -
+          Thời gian làm việc:{" "}
+          <strong className="font-bold neonText">{`Thứ 2 - Thứ 7 | 7H30 - 18H30`}</strong>
+        </h6>
+        <h2>Liên hệ với chúng tôi</h2>
+        <div className="contact-icon flex flex-row justify-center gap-x-12">
+          <a href="">
+            <img src={fbIcon} alt="" className="icon-link" />
+          </a>
+          <a href="">
+            <img src={zaloIcon} alt="" className="icon-link" />
+          </a>
+          <a href="">
+            <img src={phoneIcon} alt="" className="icon-link" />
+          </a>
+        </div>
+      </div>
+
+      <div className="license text-center">
+        Copyright © 2024 hoatuoimoingay.shop - All rights reserved.
+      </div>
     </div>
   );
 };
