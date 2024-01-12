@@ -20,8 +20,45 @@
 }
 
 .split-background {
-  height: 100vh;
+  height: 120vh;
   margin-top: 60px;
+}
+
+.wiper-wrap {
+  /* background: rgb(50, 39, 39); */
+  position: absolute;
+  height: 85vh;
+  width: 35%;
+  border-radius: 20px;
+  top: 140px;
+  left: 120px;
+  z-index: 100;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* background: #000; */
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #332e29;
 }
 
 /*==================
@@ -32,21 +69,24 @@ input[type="radio"] {
   display: none;
 }
 
-.container {
+.container-silde {
   background: rgb(255, 255, 255);
-  position: relative;
-  height: 100vh;
-  width: 50%;
-  padding: 2em;
-  background: #111111;
+  position: absolute;
+  height: 85vh;
+  width: 35%;
+  /* padding: 0 2em; */
+  /* background: #111111; */
+  /* border-radius: 20px; */
+  top: 180px;
+  left: 120px;
 }
 
 .slide-wrapper {
   position: relative;
   margin: 0 auto;
-  padding: 3em;
-  width: 40%;
-  height: 80%;
+  /* padding: 3em; */
+  /* width: 40%; */
+  height: 100%;
   border-radius: 20px;
   box-shadow: 0px 1px 2px 0px rgb(53, 53, 53);
   overflow: hidden;
@@ -79,19 +119,19 @@ input[type="radio"] {
 /* backgrounds */
 
 .slide-1 {
-  background-image: url("https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=650&w=940");
+  background-image: url("./assets/2024_01_10_14_33_IMG_3344.JPG");
 }
 
 .slide-2 {
-  background-image: url("https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=650&w=940");
+  background-image: url("./assets/2024_01_10_14_38_IMG_3345.JPG");
 }
 
 .slide-3 {
-  background-image: url("https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+  background-image: url("./assets/2024_01_10_14_39_IMG_3346.JPG");
 }
 
 .slide-4 {
-  background-image: url("https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+  background-image: url("./assets/2024_01_10_14_42_IMG_3351.JPG");
 }
 
 /*===================
@@ -109,9 +149,9 @@ input[type="radio"] {
   background: rgb(255, 255, 255);
   box-shadow: 0px 2px 2px rgba(56, 56, 56, 0.822);
   position: absolute;
-  bottom: 12%;
-  width: 30px;
-  height: 30px;
+  bottom: 8%;
+  width: 24px;
+  height: 24px;
   cursor: pointer;
   transform: scale(1.1);
   z-index: 1000;
@@ -144,8 +184,8 @@ input[type="radio"] {
   display: inline-block;
   border: 1px solid white;
   background: rgb(11, 185, 238);
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   margin: 3px 3px;
   transform: scale(0.5, 0.5);
   box-shadow: 0px 1px 5px rgba(56, 56, 56, 0.822);
@@ -170,7 +210,7 @@ input[type="radio"]:checked#slide-3-trigger
 }
 
 input[type="radio"]:checked#slide-4-trigger
-  ~ div.slide-wrapper
+  ~ div.slide-wrappe
   > div#slide-role {
   left: -300%;
 }
@@ -185,6 +225,76 @@ input[type="radio"]:checked + label.btn {
 input[type="radio"]:checked + label.btn::after {
   transform: scale(1.1, 1.1);
   background: lightskyblue;
+}
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+.banner-content {
+  background-color: rgb(255, 255, 255);
+  color: #111111;
+  top: 80px;
+  right: 120px;
+  width: 115vh;
+  height: 80vh;
+  border-radius: 20px;
+  border: 1px solid brown;
+  padding-left: 180px;
+  padding-right: 30px;
+}
+
+.banner-content h1 {
+  font-weight: 700;
+  font-size: 54px;
+  color: #332e29;
+  margin-top: 60px;
+}
+
+.banner-content h5 {
+  font-size: 26px;
+  line-height: 1.5;
+  margin: 24px 0 28px;
+}
+
+.btn-hover {
+  font-size: 16px;
+  position: relative;
+  margin: auto;
+  padding: 1em 3em;
+  border: none;
+  background: #3f3f3f;
+  transition: all 0.1s linear;
+  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+  margin-top: 18px;
+}
+
+.btn-hover:active {
+  transform: scale(0.95);
+}
+
+.btn-hover span {
+  color: #fef3f3;
+  font-size: 18px;
+}
+
+.btn-hover .border {
+  position: absolute;
+  border: 0.15em solid #3f3f3f;
+  transition: all 0.3s 0.08s linear;
+  top: 50%;
+  left: 50%;
+  width: 9em;
+  height: 3em;
+  transform: translate(-50%, -50%);
+}
+
+.btn-hover:hover .border {
+  display: block;
+  width: 11.4em;
+  height: 4.2em;
+}
+
+.full-rounded {
+  border-radius: 6px;
 }
 
 /*=====================================================================================
