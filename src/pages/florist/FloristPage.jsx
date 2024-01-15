@@ -37,7 +37,7 @@ const FloristPage = () => {
   }, []);
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <div className="header fixed top-0 left-0 w-full z-[9999]">
         <div className="header-content w-10/12 flex flex-row justify-between items-center">
           <div className="header-logo">NHD</div>
@@ -47,7 +47,7 @@ const FloristPage = () => {
         </div>
       </div>
 
-      <div className="split-background flex flex-col relative">
+      <div className="split-background relative">
         <div className="top-section h-[60vh] bg-[#f4dfc5]"></div>
         <div className="bottom-section h-[60vh] bg-white"></div>
         <div className="banner-content absolute z-10">
@@ -149,7 +149,7 @@ const FloristPage = () => {
         </div>
       </div> */}
 
-      <div className="contact h-[100vh] bg-[#f4dfc5] flex flex-col items-center">
+      <div className="contact bg-[#f4dfc5] flex flex-col items-center">
         <h1 data-aos="zoom-in">Về chúng tôi</h1>
         <h5 data-aos="zoom-in-up">
           Chào mừng đến với dịch vụ của chúng tôi, nơi nghệ thuật và sáng tạo
