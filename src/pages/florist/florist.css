@@ -586,7 +586,7 @@
   .contact {
     padding: 24px 20px;
     color: #332e29;
-    height: 105vh;
+    height: max-content;
   }
 
   .contact h1 {

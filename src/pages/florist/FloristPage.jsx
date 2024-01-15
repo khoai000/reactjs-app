@@ -159,24 +159,30 @@ const FloristPage = () => {
           tôi tư vấn và đáp ứng theo phong cách riêng của bạn, biến những khung
           cảnh quen thuộc thành trải nghiệm đầy hương thơm và màu sắc tuyệt vời.
         </h5>
-        <h2 data-aos="zoom-out-right">Thời gian</h2>
-        <h6 data-aos="zoom-out-left">
+        <h2
+        // data-aos="zoom-out-right"
+        >
+          Thời gian
+        </h2>
+        <h6
+        // data-aos="zoom-out-left"
+        >
           Nhận tư vấn: <strong className="font-bold neonText">24/7</strong> -
           Thời gian làm việc:{" "}
           <strong className="font-bold neonText">{`Thứ 2 - Thứ 7 | 7H30 - 18H30`}</strong>
         </h6>
         <h2
-          data-aos="flip-left"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+        // data-aos="flip-left"
+        // data-aos-easing="ease-out-cubic"
+        // data-aos-duration="2000"
         >
           Liên hệ với chúng tôi
         </h2>
         <div
           className="contact-icon flex flex-row justify-center gap-x-12"
-          data-aos="flip-right"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          // data-aos="flip-right"
+          // data-aos-easing="ease-out-cubic"
+          // data-aos-duration="2000"
         >
           <a href="">
             <img src={fbIcon} alt="" className="" />
