@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reactjs-app/static/css/main.d86ebb50.css",
-    "main.js": "/reactjs-app/static/js/main.cc11030a.js",
+    "main.css": "/reactjs-app/static/css/main.cbef90ee.css",
+    "main.js": "/reactjs-app/static/js/main.d526d0c4.js",
     "static/media/2024_01_10_14_38_IMG_3345.JPG": "/reactjs-app/static/media/2024_01_10_14_38_IMG_3345.1f25bc58133ef860e746.JPG",
     "static/media/2024_01_10_14_39_IMG_3346.JPG": "/reactjs-app/static/media/2024_01_10_14_39_IMG_3346.cfe1a9ed46b0d8c7a338.JPG",
     "static/media/2024_01_10_14_43_IMG_3355.JPG": "/reactjs-app/static/media/2024_01_10_14_43_IMG_3355.a81f4b5ca8f76c0dac26.JPG",
@@ -15,11 +15,11 @@
     "static/media/telephone-call.png": "/reactjs-app/static/media/telephone-call.cd89af713013cbc3e210.png",
     "static/media/facebook.png": "/reactjs-app/static/media/facebook.49e67d43221b6bb1aa86.png",
     "index.html": "/reactjs-app/index.html",
-    "main.d86ebb50.css.map": "/reactjs-app/static/css/main.d86ebb50.css.map",
-    "main.cc11030a.js.map": "/reactjs-app/static/js/main.cc11030a.js.map"
+    "main.cbef90ee.css.map": "/reactjs-app/static/css/main.cbef90ee.css.map",
+    "main.d526d0c4.js.map": "/reactjs-app/static/js/main.d526d0c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.d86ebb50.css",
-    "static/js/main.cc11030a.js"
+    "static/css/main.cbef90ee.css",
+    "static/js/main.d526d0c4.js"
   ]
 }
