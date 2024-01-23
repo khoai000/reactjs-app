@@ -19,6 +19,7 @@ const TodoList = () => {
   const database = getDatabase();
   const [input, setInput] = useState("");
 
+  // GET DATA ------------------------------------------------
   const fetchData = useCallback(async () => {
     try {
       const dataF = [];
@@ -38,6 +39,7 @@ const TodoList = () => {
     fetchData();
   }, [fetchData]);
 
+  // ADD DATA ------------------------------------------------
   const addData = useCallback(async () => {
     const randomNumber = Math.floor(Math.random() * 10) + 1;
     await addDoc(collection(db, "todo-list"), {
@@ -49,6 +51,7 @@ const TodoList = () => {
     fetchData();
   }, [fetchData, input]);
 
+  // UPDATE DATA ------------------------------------------------
   const updateData = useCallback(async () => {
     const itemIDs = [];
 
@@ -71,6 +74,7 @@ const TodoList = () => {
     fetchData();
   }, [fetchData]);
 
+  // DELETE DATA ------------------------------------------------
   const deleteData = useCallback(async () => {
     const itemIDs = [];
     const q = query(collection(db, "todo-list"), where("quantity", "<", 5));

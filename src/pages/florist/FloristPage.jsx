@@ -56,7 +56,7 @@ const FloristPage = () => {
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident, sunt in culpa qui officia deserunt.
-          </h5>
+          </h5> 
           <button class="btn-hover full-rounded">
             <span>Hover me</span>
             <div class="border full-rounded"></div>
